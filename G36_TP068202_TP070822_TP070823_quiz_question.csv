@@ -251,8 +251,8 @@
 250|How does the delete() operation handle the case where the node to be deleted has nonempty left and right subtrees?|A) It replaces the node with its left child|B) It replaces the node with its right child|C) It replaces the node with the maximum node from its left subtree|D) It removes the node and re-balances the tree using rotations|C
 251|Which data structure is composed of vertices (nodes) and edges (links/arcs)?|A) Tree|B) Graph|C) Linked List|D) Stack|B
 252|What component of a graph describes relationships among the objects represented by vertices?|A) Vertex|B) Edge|C) Root|D) Leaf|B
-253|Graphs are solely used in the analysis of electrical circuits and network communications, finding shortest route between two places and many more. Answer True or False?|A) True|B) False|A
-254|Graphs are useful for representing linear relationships between objects/entities. Answer True or False?|A) True|B) False|A
+253|Graphs are solely used in the analysis of electrical circuits and network communications, finding shortest route between two places and many more. Answer True or False?|A) True|B) False|||A
+254|Graphs are useful for representing linear relationships between objects/entities. Answer True or False?|A) True|B) False|||A
 255|What typically represents a point or entity in a graph?|A) Edge|B) Vertex|C) Link|D) Arc|B
 256|What does "x ∈ A∪B" signify in set theory?|A) Intersection of sets A and B|B) Subset of set A by set B|C) Union of sets A and B|D) Cartesian product of sets A and B|C
 257|What does x∈A∪B signify in set theory?|A) Intersection|B) Union|C) Subset|D) Superset|B
