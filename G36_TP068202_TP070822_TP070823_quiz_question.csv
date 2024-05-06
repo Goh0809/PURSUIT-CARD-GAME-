@@ -99,8 +99,86 @@
 98|What does the expression ptr->value() in C++ represent?|A) Dereferencing a pointer|B) Accessing a member function via a pointer|C) Accessing a data member via a pointer|D) Initializing a pointer|C
 99|How does C++ ensure type safety when using pointers?|A) By restricting pointer arithmetic|B) By automatically initializing pointers|C) By disallowing pointers altogether|D) By enforcing strict naming conventions|A
 100|What is the significance of the ampersand (&) operator in C++?|A) Returns the memory address of a variable|B) Indicates a reference variable|C) Denotes the size of a variable|D) Represents the bitwise AND operation|A
-
-
+101|What is the purpose of linked lists?|A) To store data in contiguous memory blocks|B) To organize and process data in memory|C) To provide fast random access to elements|D) To eliminate the need for pointers|B
+102|What is a key advantage of array lists over linked lists?|A) Fixed array size|B) Slow insertion operations|C) Fast random access|D) Limited memory usage|C
+103|Which data structure allows for fast random access to any element?|A) Linked list|B) Array list|C) Stack|D) Queue|B
+104|What component does every node in a linked list (except the last) contain?|A) Data|B) Pointer to the previous node|C) Link to the next node|D) Head pointer|C
+105|What does the NULL link field in the last node of a linked list indicate?|A) The end of the list|B) A circular reference|C) The presence of a loop|D) An empty list|A
+106|Which pointer allows access to the elements of a linked list?|A) Current pointer|B) Head pointer|C) Last pointer|D) Node pointer|B
+107|How can the number of elements in a linked list be determined?|A) By accessing the head node|B) By counting the number of NULL links|C) By traversing the entire list|D) By using an index variable|C
+108|What does a head variable in a linked list store?|A) Address of the last node|B) Address of the previous node|C) Address of the first node|D) Address of the current node|C
+109|Why is it necessary to create a new node in the heap when inserting into a linked list?|A) To conserve memory|B) To avoid memory leaks|C) To simplify the code|D) To speed up insertion|B
+110|What happens if a new node is created in the stack during insertion?|A) Memory leak occurs|B) Stack overflow error|C) Dangling pointer issue|D) Memory fragmentation|C
+111|What is the primary purpose of the destructor in a linked list class?|A) To create new nodes|B) To prevent memory leaks|C) To access list elements|D) To manage stack memory|B
+112|Which operation is used to calculate the size of a linked list?|A) getSize()|B) insert()|C) clear()|D) traverse()|A
+113|Which method is used to clear a linked list?|A) delete()|B) clear()|C) remove()|D) empty()|B
+114|How can the size of a linked list be updated during insertion?|A) By subtracting from the current size|B) By adding to the current size|C) By multiplying the current size|D) By dividing the current size|B
+115|What does the size field in a linked list data structure represent?|A) Number of nodes in the list|B) Total memory allocated|C) Size of each node|D) Index of the last node|A
+116|What happens if a linked list is not properly cleared?|A) Memory leak occurs|B) Stack overflow error|C) Dangling pointer issue|D) Index out of bounds error|A
+117|Which operation is used to access list elements by index?|A) getSize()|B) insert()|C) get()|D) traverse()|C
+118|What is the primary advantage of using a linked list over an array list?|A) Fast random access|B) Fixed array size|C) Flexible size|D) Sequential access|C
+119|What operation is necessary to determine if an item is in the list?|A) getSize()|B) insert()|C) search()|D) delete()|C
+120|Which component of a linked list node stores relevant information?|A) Link|B) Pointer|C) Data|D) Index|C
+121|What operation determines the existence of an item in a linked list?|A) Add|B) Search|C) Remove|D) Sort|B
+122|What is the key field parameter in a linked list search function?|A) Index|B) Value|C) Size|D) Length|B
+123|What is the time complexity for accessing an element at a given index in a linked list?|A) O(1)|B) O(log n)|C) O(n)|D) O(n^2)|C
+124|What method is used to get the element's info at a given index?|A) getItemAt|B) getItemInfo|C) accessItem|D) getElement|A
+125|How is the first element deleted in a linked list?|A) deleteStart|B) removeFirst|C) deleteFirst|D) removeStart|C
+126|How is the last element deleted in a linked list?|A) deleteEnd|B) removeLast|C) deleteLast|D) removeEnd|A
+127|What method is used to delete an item at an arbitrary index in a linked list?|A) deleteItemAt|B) removeItem|C) deleteItem|D) removeItemAt|D
+128|What is the time complexity for deleting an item at an arbitrary index in a linked list?|A) O(1)|B) O(log n)|C) O(n)|D) O(n^2)|C
+129|What is the primary purpose of the link field in a linked list node?|A) Store data|B) Identify node|C) Point to the next node|D) Store index|C
+130|What happens if an attempt is made to access an element at an index beyond the bounds of the linked list?|A) Index out of range error|B) Null pointer exception|C) Memory leak|D) Index out of bound|A231|When traversing a linked list, what is compared with the desired value to search for an item?|A) Index|B) Pointer|C) Info|D) Size|C
+131| When traversing a linked list, what is compared with the desired value to search for an item?|A) Index|B) Pointer|C) Info|D) Size|C
+132|What type of error may occur if a new node is created in the stack during insertion?|A) Memory leak|B) Stack overflow error|C) Dangling pointer issue|D) Memory fragmentation|C
+133|What is the time complexity for deleting the last item in a linked list?|A) O(1)|B) O(log n)|C) O(n)|D) O(n^2)|C
+134|Linked lists can be used to implement a queue data structure efficiently.|A) True|B) False|A
+135|What modification is required in the constructor of a linked list to accommodate efficient insertion at the end?|A) Initializing size to 1|B) Setting head to NULL|C) Initializing tail to NULL|D) Allocating memory for a new node|C
+136|In a linked list, which operation's efficiency is not improved by using a tail pointer?|A) Inserting at the beginning|B) Deleting from the beginning|C) Inserting at the end|D) Deleting from the end|A
+137|Which method allows reversed traversal of a linked list using recursion?|A) printReverse()|B) traverseBackward()|C) reverseTraversal()|D) backwardPrint()|A
+138|Which approach is more efficient for reversed traversal of a linked list?|A) Using a nested loop|B) Using recursion|C) Using a doubly linked list|D) Using an array|B
+139|What is the main advantage of using doubly linked lists?|A) Efficient insertion at the beginning|B) Efficient traversal in both directions|C) Reduced memory consumption|D) Simplified implementation of insertions|B
+140|What application can benefit from the use of doubly linked lists?|A) Implementing a stack|B) Implementing a queue|C) Implementing back and forward buttons in a web browser|D) Implementing a binary search tree|C
+141|How can doubly linked lists improve traversal to reach an item at a given index?|A) By starting from the middle|B) By starting from the end|C) By starting from both ends simultaneously|D) By using a recursive approach|C
+142|Which data structure is suitable for implementing back and forward buttons in a web browser?|A) Singly linked list|B) Doubly linked list|C) Circular linked list|D) Array|B
+143|What characteristic distinguishes a circular linked list from a normal linked list?|A) It stores NULL at the end node|B) It has a limited number of elements|C) Its last node points to the first node|D) It allows bidirectional traversal|C
+144|What operation must be handled differently in a circular linked list compared to a normal linked list?|A) Insertion at the beginning|B) Deletion from the beginning|C) Insertion at the end|D) Deletion from the end|A
+145|Which operation's efficiency does not improve significantly in a circular linked list compared to a normal linked list?|A) Traversal|B) Insertion at the beginning|C) Insertion at the end|D) Deletion from the end|A
+146|What modification is necessary in a circular linked list's insertion at the beginning compared to a normal linked list?|A) Initializing head to NULL|B) Allocating memory for a new node|C) Setting the tail pointer to the new node|D) Making the last node point to the new node|D
+147|What operation is performed differently in a circular doubly linked list compared to a circular linked list?|A) Traversal|B) Insertion at the beginning|C) Deletion from the beginning|D) Insertion at the end|B
+148|Which factor is critical in determining whether to use an array or a linked list?|A) Time complexity of operations|B) Length of the code|C) Availability of memory|D) Ease of implementation|A
+149|When is a linked list preferred over an array?|A) When dynamic addition and expansion are required|B) When lots of random access is necessary|C) When searching and items are unsorted|D) When memory consumption is a concern|A
+150|What operation is efficient in a circular doubly linked list compared to a circular linked list?|A) Traversal from beginning to end|B) Traversal from end to beginning|C) Insertion at the beginning|D) Insertion at the end|C
+151|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?|A) Insertion at the beginning|B) Insertion at the end|C) Deletion from the beginning|D) Deletion from the end|D
+152|What is a significant advantage of circular doubly linked lists?|A) Efficient memory utilization|B) Ability to store a large number of elements|C) Natural implementation of round-robin scheduling|D) Bidirectional traversal efficiency|D
+153|What operation is performed differently in a circular doubly linked list compared to a circular linked list?|A) Traversal|B) Insertion at the beginning|C) Deletion from the beginning|D) Insertion at the end|B
+154|Which factor is critical in determining whether to use an array or a linked list?|A) Time complexity of operations|B) Length of the code|C) Availability of memory|D) Ease of implementation|A
+155|When is a linked list preferred over an array?|A) When dynamic addition and expansion are required|B) When lots of random access is necessary|C) When searching and items are unsorted|D) When memory consumption is a concern|A
+156|What operation is efficient in a circular doubly linked list compared to a circular linked list?|A) Traversal from beginning to end|B) Traversal from end to beginning|C) Insertion at the beginning|D) Insertion at the end|C
+157|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?|A) Insertion at the beginning|B) Insertion at the end|C) Deletion from the beginning|D) Deletion from the end|D
+158|What is a significant advantage of circular doubly linked lists?|A) Efficient memory utilization|B) Ability to store a large number of elements|C) Natural implementation of round-robin scheduling|D) Bidirectional traversal efficiency|D
+159|What application can benefit from the use of doubly linked lists?|A) Implementing a stack|B) Implementing a queue|C) Implementing back and forward buttons in a web browser|D) Implementing a binary search tree|C
+160|How can doubly linked lists improve traversal to reach an item at a given index?|A) By starting from the middle|B) By starting from the end|C) By starting from both ends simultaneously|D) By using a recursive approach|C
+161|What operation in a stack adds an element onto the stack?|A) top|B) push|C) pop|D) isEmpty|B
+162|In the context of stack operations, what does the top operation do?|A) Removes the top element from the stack|B) Adds an element onto the stack|C) Peeks at the top element of the stack without removing it|D) Checks if the stack is empty|C
+163|Which application utilizes the stack concept for parentheses matching?|A) Sorting algorithms|B) Parentheses balancing|C) Searching algorithms|D) String manipulation|B
+164|What is the expected behavior of the isEmpty operation in a stack?|A) It returns true if the stack is full|B) It returns true if the stack is not empty|C) It returns true if the stack is empty|D) It returns true if the stack is balanced|C
+165|What algorithm is used for parentheses matching?|A) Depth-first search|B) Breadth-first search|C) Greedy algorithm|D) Stack-based algorithm|D
+166|How is the stack data structure represented using arrays?|A) Elements are stored in a linked list|B) Elements are stored in a circular buffer|C) Elements are stored in a two-dimensional array|D) Elements are stored in a one-dimensional array|D
+167|Which operation checks if the stack is empty?|A) isEmpty|B) push|C) pop|D) top|A
+168|What is the purpose of the pop operation in a stack?|A) To add an element onto the stack|B) To peek at the top element of the stack|C) To remove the top element from the stack|D) To check if the stack is empty|C
+169|In which application is the infix to postfix evaluation method used?|A) Database management|B) Compiler design|C) Graphics rendering|D) Network routing|B
+170|How is the stack data structure represented using linked nodes?|A) Elements are stored in an array|B) Elements are stored in a tree structure|C) Elements are stored in linked nodes|D) Elements are stored in a hash table|C
+171|What is the purpose of the infix to postfix evaluation method?|A) To convert arithmetic expressions from postfix to infix notation|B) To convert arithmetic expressions from infix to postfix notation|C) To evaluate arithmetic expressions in postfix notation|D) To evaluate arithmetic expressions in infix notation|B
+172|Which operation is used to add an element onto the stack?|A) top|B) push|C) pop|D) isEmpty|B
+173|What is the key characteristic of a stack data structure?|A) First In First Out (FIFO)|B) Last In First Out (LIFO)|C) Random access|D) Bidirectional access|B
+174|Which operation removes the top element from the stack?|A) top|B) push|C) pop|D) isEmpty|C
+175|In postfix evaluation, what is done when an operand is encountered?|A) It is outputted immediately|B) It is pushed onto the stack|C) It is popped from the stack|D) It is added to the top of the stack|B
+176|What does the acronym LIFO stand for in the context of stacks?|A) Last In First Out|B) Lost In First Out|C) Last In Fifth Out|D) Last Into First Out|A
+177|Which of the following is NOT a standard operation of a stack?|A) push|B) add|C) pop|D) top|B
+178|Which data structure is used to implement a stack using a linked list?|A) Array|B) Queue|C) Tree|D) Graph|C
+179|What happens when a right parenthesis is encountered in parentheses matching and the stack is empty?|A) The right parenthesis is added to the stack|B) An error is raised|C) The right parenthesis
+180|In the infix to postfix evaluation algorithm, what is done when a closing parenthesis is encountered?|A) All operators in the stack are popped until an opening parenthesis is encountered|B) All operands in the stack are popped until a closing parenthesis is encountered|C) The closing parenthesis is pushed onto the stack|D) The algorithm terminates|A
 181|What is a queue in data structures?|A) A list of homogeneous elements|B) A list of heterogeneous elements|C) A list of elements added at the front|D) A list of elements deleted from the front|A
 182|What is the characteristic feature of a FIFO data structure?|A) Elements are added at the back|B) Elements are added at the front|C) Elements are deleted from the back|D) Elements are deleted from the front|D
 183|In a queue, how are elements added and deleted?|A) Added at the front, deleted from the back|B) Added at the back, deleted from the front|C) Added at the front, deleted from the front|D) Added at the back, deleted from the back|B
