@@ -209,14 +209,14 @@
 208|In a tree data structure, all nodes except the root have exactly one parent. Answer True or False?|A) True|B) False|||A
 209|File directories in computer science are represented using tree structures. Answer True or False?|A) True|B) False|||A
 210|In a binary tree, what is the maximum number of children a node can have?|A) One|B) Two|C) Three|D) Four|B
-211|How many nodes does a full binary tree of height (h) have?|A) 2h2h|B) 2h−12h−1|C) h2h2|D) hh|A
+211|How many nodes does a full binary tree of height (h) have?|A) 2h|B) 2h−1|C) h2|D) h|A
 212|A binary tree with n nodes has a height of at least log2(n+1). Answer True or False?|A) True|B) False|||A
 213|What are the two sets of nodes in a binary tree called?|A) Left and right nodes|B) Left subtree and right subtree|C) Left and right children|D) Left and right branches|B
 214|In array representation, each element is stored at an array position corresponding to its assigned number. Answer True or False?|A) True|B) False|||A
 215|How does linked representation of a binary tree connect parent and child nodes?|A) Arrays|B) Linked lists|C) Stacks|D) Queues|B
 216|Common binary tree operations include determining height, counting nodes and leaves, and traversing the tree. Answer True or False?|A) True|B) False|||A
-217|How long should the array be for a complete binary tree with n nodes?|A) n2n2|B) n+1n+1|C) 2n2n|D) n+1n+1|D
-218|How long should the array be for a right-skewed binary tree with n nodes?|A) nn|B) 2n2n|C) n+1n+1|D) 2n2n|D
+217|How long should the array be for a complete binary tree with n nodes?|A) n2|B) n+1|C) 2n|D) n+1|D
+218|How long should the array be for a right-skewed binary tree with n nodes?|A) n|B) 2n|C) n+1|D) 2^n|D
 219|What are the four different traversal methods are commonly used for binary trees?|A) Pre-order, In-order, Post-order, Level-order|B) Depth-first, Breadth-first, Pre-order, Post-order|C) In-order, Level-order, Breadth-first, Depth-first|D) Depth-first, In-order, Post-order, Level-order|A
 220|During which traversal method is the root node visited last?|A) Pre-order traversal|B) In-order traversal|C) Post-order traversal|D) Level-order traversal|C
 221|Which traversal method visits the nodes from left to right at each level of the tree before moving to the next level?|A) Pre-order traversal|B) In-order traversal|C) Post-order traversal|D) Level-order traversal|D
