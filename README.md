@@ -7,8 +7,11 @@ Participants
 Question
 - Array?
 
-Unanswered desk, Answered Desk, Discarded Cards
+Unanswered desk, Answered Desk
 - Stack/Queue
+
+Discarded Card 
+- Queue
 
 Winner Hierachical Chart
 - Tree/BST/Graph?
@@ -19,6 +22,5 @@ Search Function
 Sort Function
 - Bubble Sort/Insertion Sort, etc
 
-Flow: 
-1. 
+
 
