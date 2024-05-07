@@ -7,8 +7,8 @@ using namespace std;
 struct discardedCardQueueNode {
 	// question data
 	int questionNumber;
-	/*string quizQuestion;
-	char answer;*/
+	string quizQuestion;
+	char answer;
 
 	// link
 	discardedCardQueueNode* next; 
@@ -44,14 +44,14 @@ public:
 	}
 
 	// Create new node for discarded card queue
-	discardedCardQueueNode* createNewNode(int questionNumber) {
+	discardedCardQueueNode* createNewNode(int questionNumber, string quizQuestion, char answer) {
 		// create struct in heap location
 		discardedCardQueueNode* newNode = new discardedCardQueueNode;
 		
 		// put all the details into the location
 		newNode->questionNumber = questionNumber;
-		/*newNode->quizQuestion = quizQuestion;
-		newNode->answer = answer;*/
+		newNode->quizQuestion = quizQuestion;
+		newNode->answer = answer;
 		newNode->next = nullptr;
 		newNode->prev = nullptr;
 
@@ -59,8 +59,8 @@ public:
 	}
 
 	// enqueue
-	void enqueue(int questionNumber) {
-		discardedCardQueueNode* newNode = createNewNode(questionNumber);
+	void enqueue(int questionNumber,string quizQuestion,char answer) {
+		discardedCardQueueNode* newNode = createNewNode(questionNumber,quizQuestion,answer);
 		if (isEmpty()) {
 			discardedCardQueueFront = discardedCardQueueRear = newNode;
 		}
@@ -88,14 +88,20 @@ public:
 		delete temp;
 		discardedCardQueueSize--;
 	}
+	
+	discardedCardQueueNode* getFirstDiscardedCard() {
+		return discardedCardQueueFront;
+	}
 
 	// display the node of discarded card queue - testing
 	void dispalyFromFront() {
 		discardedCardQueueNode* current = discardedCardQueueFront;
 		while (current != nullptr) {
-			cout << current->questionNumber << " ";
+			cout << current->questionNumber << " " << current->quizQuestion;
 			current = current->next;
 		}
 	}
+
+
 
 };

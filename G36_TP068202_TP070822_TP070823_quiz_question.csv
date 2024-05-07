@@ -3,8 +3,8 @@
 2|What term describes indivisible data? A) Composite Data B) Atomic Data C) Scalar Data D) Primitive Data|B
 3|What does a data type primarily determine? A) Number of steps in an algorithm B) Kind of values a variable can store C) Set of associations in a data structure D) Number of seats in a movie theater|B
 4|What is the main purpose of Abstract Data Types (ADT)? A) Perform arithmetic operations B) Define low-level data structures C) Package data with meaningful operations D) Optimize memory allocation|C
-5|What is the definition of an algorithm?A) Set of instructions to solve a problemB) Data declaration with meaningful operationsC) Collection of related variablesD) Kind of data structure|A
-6|How does algorithm efficiency affect real-world performance?A) It increases memory usageB) It decreases execution timeC) It has no impactD) It enhances hardware components|B
+5|What is the definition of an algorithm ?A) Set of instructions to solve a problem B) Data declaration with meaningful operation sC) Collection of related variables D) Kind of data structure|A
+6|How does algorithm efficiency affect real-world performance? A) It increases memory usage B) It decreases execution time C) It has no impact D) It enhances hardware components|B
 7|What analogy explains the relationship between data, data structures, and algorithms?A) Classroom organizationB) Movie theater seats and finding seatsC) Cooking recipesD) Traffic flow management|B
 8|What resources are crucial for measuring efficiency in computing?A) Energy and speedB) Time and spaceC) Cost and materialsD) Voltage and frequency|B
 9|What primarily represents Big O complexity?A) Time and space balanceB) Maximum number of stepsC) Minimum number of stepsD) Average number of steps|A
