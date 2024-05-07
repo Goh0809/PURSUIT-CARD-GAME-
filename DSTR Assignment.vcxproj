@@ -132,6 +132,10 @@
   <ItemGroup>
     <None Include="G36_TP068202_TP070822_TP070823_quiz_question.csv" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp" />
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_student_linkedlist.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
