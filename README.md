@@ -2,7 +2,7 @@
 
 ## Data Structure and Algorithm Implementation
 Participants
-- Linked List
+- Linked List: after the student answer the question, the system should record the data into the system
 
 Question
 - Array?
