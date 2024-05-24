@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 #define MAX_SIZE 300	// 300 quiz question is need to be provided
 using namespace std;
@@ -9,7 +11,7 @@ struct QuizQuestion {
 	string questionNumber;
 	string quizQuestion;
 	string answer;
-	string score;
+	int score;
 };
 
 class UnansweredDeckCircularQueue {
@@ -47,7 +49,7 @@ public:
 	}
 
 	// enqueue
-	void enqueue(string questionNumber, string quizQuestion, string answer, string score) {
+	void enqueue(string questionNumber, string quizQuestion, string answer, int score) {
 		if (isFull()) {
 			cout << "Queue is Full, Unable to Enqueue!";
 			return;
@@ -92,18 +94,39 @@ public:
 			return;
 		} 
 		else {
-			for (int i = front; i <= rear; i = (i + 1) % MAX_SIZE)
+			int i;
+			for (i = front; i != rear; i = (i + 1) % MAX_SIZE)
 			{
 				cout << unansweredDeck[i].questionNumber << endl;
 				cout << unansweredDeck[i].quizQuestion << endl;
 				cout << unansweredDeck[i].answer << endl;
-				cout << unansweredDeck[i].score << endl;
+				cout << unansweredDeck[i].score << endl << endl;
 			}
+			cout << unansweredDeck[i].questionNumber << endl;
+			cout << unansweredDeck[i].quizQuestion << endl;
+			cout << unansweredDeck[i].answer << endl;
+			cout << unansweredDeck[i].score << endl << endl;
+		}
+	}
+
+	// Fisher–Yates shuffle Algorithm to randomize the array
+	void randomize() {
+		srand(time(NULL));
+		for (int i = MAX_SIZE - 1; i > 0; i--) {
+			int j = rand() % (i + 1);
+			swap(&unansweredDeck[i], &unansweredDeck[j]);
 		}
 	}
 
 
+private: 
+	void swap(QuizQuestion *a, QuizQuestion* b) {
+		QuizQuestion temp = *a;
+		*a = *b;
+		*b = temp;
+	}
 
 };
 
 //https://prepinsta.com/cpp-program/circular-queue-using-array/
+//https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/

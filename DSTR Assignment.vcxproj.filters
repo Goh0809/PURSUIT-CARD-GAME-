@@ -34,7 +34,7 @@
     <ClInclude Include="G36_TP068202_TP070822_TP070823_CircularQueue_Unanswered_Deck.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="G36_TP068202_TP070822_TP070823_Common_Logic.hpp">
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_Pursuit_Card_Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

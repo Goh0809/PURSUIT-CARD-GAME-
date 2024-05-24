@@ -10,7 +10,7 @@ struct discardedCardNode {
 	string questionNumber;
 	string quizQuestion;
 	string answer;
-	string score;
+	int score;
 
 	// link
 	discardedCardNode* nextAdd;
@@ -45,7 +45,7 @@ public:
 	}
 
 	// create new node for discarded card queue
-	discardedCardNode* createNewNode(string questionNumber, string quizQuestion, string answer, string score) {
+	discardedCardNode* createNewNode(string questionNumber, string quizQuestion, string answer, int score) {
 		// create struct in heap location
 		discardedCardNode* newNode = new discardedCardNode();
 
@@ -61,7 +61,7 @@ public:
 	}
 
 	// enqueue
-	void enqueue(string questionNumber, string quizQuestion, string answer, string score) {
+	void enqueue(string questionNumber, string quizQuestion, string answer, int score) {
 		discardedCardNode* newNode = createNewNode(questionNumber, quizQuestion, answer, score);
 		if (front == nullptr) {
 			front = rear = newNode;

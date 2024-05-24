@@ -7,11 +7,11 @@
 using namespace std;
 
 class PursuitCardGame {
-	UnansweredDeckCircularQueue unansweredDeck;
 	// Reminder - adjust the file path by yourself
 	string quizQuestionFilePath = "C:\\Users\\Goh Ee Cheng\\Desktop\\DSTR Assignment\\DSTR Assignment\\G36_TP068202_TP070822_TP070823_quiz_question.csv";
 
 public:
+	UnansweredDeckCircularQueue unansweredDeck;
 	// constructor
 	PursuitCardGame() {
 
@@ -22,7 +22,7 @@ public:
 		string questionNumber;
 		string quizQuestion;
 		string answer;
-		string score;
+		string scoreStr;
 
 		// open the quiz question csv file
 		ifstream file(quizQuestionFilePath);
@@ -32,7 +32,23 @@ public:
 		getline(file, header);
 
 		// read the remaining part in the csv file and load the question into the unansweredDeck
+		while (file.good()) {
+			getline(file, questionNumber, '|');
+			getline(file, quizQuestion, '|');
+			getline(file, answer, '|');
+			getline(file, scoreStr, '\n');
 
+			// if the questionNumber equal to "" means that line be read is empty
+			if (questionNumber == "") {
+				break;
+			}
+
+			// convert the score to integer
+			int score = stoi(scoreStr);
+			// enqueue the data into the unansweredDeck queue
+			unansweredDeck.enqueue(questionNumber, quizQuestion, answer, score);
+		}
 	}
+
 
 };
