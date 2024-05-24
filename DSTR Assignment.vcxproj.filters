@@ -31,5 +31,8 @@
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_Stack_QuizQuestion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

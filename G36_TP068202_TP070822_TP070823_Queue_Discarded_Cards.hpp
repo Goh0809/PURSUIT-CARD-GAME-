@@ -4,15 +4,16 @@
 
 using namespace std;
 
+// discarded card node 
 struct discardedCardQueueNode {
 	// question data
-	int questionNumber;
+	string questionNumber;
 	string quizQuestion;
-	char answer;
+	string answer;
+	string score;
 
 	// link
-	discardedCardQueueNode* next; 
-	discardedCardQueueNode* prev;
+	discardedCardQueueNode* nextAdd;
 };
 
 class DiscardedCardQueue {
@@ -21,86 +22,92 @@ class DiscardedCardQueue {
 	int discardedCardQueueSize;
 
 public:
-	// constructor
+	// constructor 
 	DiscardedCardQueue() {
-		discardedCardQueueFront = nullptr;
-		discardedCardQueueRear = nullptr;
+		discardedCardQueueFront = discardedCardQueueRear = nullptr;
 		discardedCardQueueSize = 0;
 	}
 
 	// destructor
 	~DiscardedCardQueue() {
-		
+
 	}
 
-	// get the size of discarded card queue
+	bool isEmpty() {
+		if (discardedCardQueueFront == nullptr)
+			return true;
+		return false;
+	}
+
 	int getSize() {
 		return discardedCardQueueSize;
 	}
 
-	// determine whether the discarded card queue is empty 
-	bool isEmpty() {
-		return discardedCardQueueSize == 0;
-	}
-
-	// Create new node for discarded card queue
-	discardedCardQueueNode* createNewNode(int questionNumber, string quizQuestion, char answer) {
+	// create new node for discarded card queue
+	discardedCardQueueNode* createNewNode(string questionNumber, string quizQuestion, string answer, string score) {
 		// create struct in heap location
-		discardedCardQueueNode* newNode = new discardedCardQueueNode;
-		
-		// put all the details into the location
+		discardedCardQueueNode* newNode = new discardedCardQueueNode();
+
+		// store the question detail inside the new node
 		newNode->questionNumber = questionNumber;
 		newNode->quizQuestion = quizQuestion;
 		newNode->answer = answer;
-		newNode->next = nullptr;
-		newNode->prev = nullptr;
+		newNode->score = score;
+
+		newNode->nextAdd = nullptr;
 
 		return newNode;
 	}
 
 	// enqueue
-	void enqueue(int questionNumber,string quizQuestion,char answer) {
-		discardedCardQueueNode* newNode = createNewNode(questionNumber,quizQuestion,answer);
-		if (isEmpty()) {
+	void enqueue(string questionNumber, string quizQuestion, string answer, string score) {
+		discardedCardQueueNode* newNode = createNewNode(questionNumber, quizQuestion, answer, score);
+		if (discardedCardQueueFront == nullptr) {
 			discardedCardQueueFront = discardedCardQueueRear = newNode;
 		}
 		else {
-			discardedCardQueueRear->next = newNode;
-			newNode->prev = discardedCardQueueRear;
+			discardedCardQueueRear->nextAdd = newNode;
 			discardedCardQueueRear = newNode;
 		}
 		discardedCardQueueSize++;
 	}
 
 	// dequeue
-	void dequeue() {
+	discardedCardQueueNode* dequeue() {
+		discardedCardQueueNode* node = discardedCardQueueFront;
 		if (isEmpty()) {
-			throw out_of_range("Queue is Empty");
-		} 
-		discardedCardQueueNode* temp = discardedCardQueueFront;
-		discardedCardQueueFront = discardedCardQueueFront->next;
-		if (discardedCardQueueFront == nullptr) {
+			cout << "Queue is empty, unable to delete!" << endl;
+			exit(1);
+		}
+		discardedCardQueueNode* current = discardedCardQueueFront;
+		discardedCardQueueFront = discardedCardQueueFront->nextAdd;
+		if (discardedCardQueueFront == nullptr) 
 			discardedCardQueueRear = nullptr;
-		}
-		else {
-			discardedCardQueueFront->prev = nullptr;
-		}
-		delete temp;
+		delete current;
 		discardedCardQueueSize--;
-	}
-	
-	discardedCardQueueNode* getFirstDiscardedCard() {
-		return discardedCardQueueFront;
+		return node;
+
 	}
 
-	// display the node of discarded card queue - testing
-	void dispalyFromFront() {
+	// peek
+	discardedCardQueueNode* peek() {
+		if (isEmpty()) {
+			cout << "Queue is empty, unable to delete!" << endl;
+			exit(1);
+		}
+		return discardedCardQueueFront;
+
+	}
+
+	void displayQueue() {
 		discardedCardQueueNode* current = discardedCardQueueFront;
 		while (current != nullptr) {
-			cout << current->questionNumber << " " << current->quizQuestion;
-			current = current->next;
+			current = current->nextAdd;
 		}
+		cout << endl;
 	}
+
+
 
 
 

@@ -1,301 +1,301 @@
-﻿questionNumber|quizQuestion|Answer
-1|What is the primary goal of a data structure? A) Store data for later retrieval B) Execute instructions sequentially C) Define hardware components D) Define problem statements precisely|A
-2|What term describes indivisible data? A) Composite Data B) Atomic Data C) Scalar Data D) Primitive Data|B
-3|What does a data type primarily determine? A) Number of steps in an algorithm B) Kind of values a variable can store C) Set of associations in a data structure D) Number of seats in a movie theater|B
-4|What is the main purpose of Abstract Data Types (ADT)? A) Perform arithmetic operations B) Define low-level data structures C) Package data with meaningful operations D) Optimize memory allocation|C
-5|What is the definition of an algorithm ?A) Set of instructions to solve a problem B) Data declaration with meaningful operation sC) Collection of related variables D) Kind of data structure|A
-6|How does algorithm efficiency affect real-world performance? A) It increases memory usage B) It decreases execution time C) It has no impact D) It enhances hardware components|B
-7|What analogy explains the relationship between data, data structures, and algorithms?A) Classroom organizationB) Movie theater seats and finding seatsC) Cooking recipesD) Traffic flow management|B
-8|What resources are crucial for measuring efficiency in computing?A) Energy and speedB) Time and spaceC) Cost and materialsD) Voltage and frequency|B
-9|What primarily represents Big O complexity?A) Time and space balanceB) Maximum number of stepsC) Minimum number of stepsD) Average number of steps|A
-10|What characteristic defines simple data types?A) Can store only one value at a timeB) Can store multiple values at a timeC) Require complex algorithms for storageD) Can't be manipulated|A
-11|What is the primary function of a program in computing?A) Process input to generate desired outputB) Define problem statementsC) Select suitable algorithmsD) Test and debug code|A
-12|What is the primary aim of the Program Development Life Cycle?A) Define problem statementsB) Debug codeC) Select suitable algorithmsD) Ensure software meets user needs|D
-13|Which term describes data that can be broken down into subfields?A) Atomic DataB) Simple DataC) Composite DataD) Primitive Data|C
-14|What is the significance of selecting the best suitable algorithm?A) Increase memory usageB) Enhance hardware componentsC) Decrease execution timeD) Optimize code readability|C
-15|What is the primary aim of an ADT?A) Define problem statementsB) Optimize memory usageC) Package data with meaningful operationsD) Implement low-level data structures|C
-16|What is the primary goal of measuring efficiency in computing?A) Increase memory usageB) Decrease execution timeC) Improve code readabilityD) Optimize hardware components|B
-17|What term describes data stored for efficient search and retrieval?A) Atomic DataB) Composite DataC) Simple DataD) Structured Data|D
-18|What does the best-case complexity of an algorithm represent?A) Minimum number of stepsB) Maximum number of stepsC) Average number of stepsD) Time and space balance|A
-19|What does the worst-case complexity of an algorithm represent?A) Minimum number of stepsB) Maximum number of stepsC) Average number of stepsD) Time and space balance|B
-20|What does the preprocessor do in C++ before the compiler runs?A) Generates object codeB) Sets up the source code for the compilerC) Executes program statements sequentiallyD) Defines hardware components|B
-21|In C++, what is the first line of the main function commonly referred to as?A) Heading lineB) Initialization lineC) Declaration lineD) Definition line|A
-22|How are the cin and cout objects typically declared for use in a C++ program?A) #include <iostream>B) using namespace std;C) using std::cin; using std::cout;D) using namespace iostream;|A
-23|What preprocessor directive is used to include the string header file in a C++ program?A) #include <string>B) #include <iostream>C) #include "string.h"D) #include <cstring>|A
-24|What is the primary purpose of the if statement in C++?A) Execute a statement if a condition is trueB) Execute a statement if a condition is falseC) Execute multiple statements sequentiallyD) Define hardware components|A
-25|What is the general syntax of a switch structure in C++?A) switch (condition) { case label: statements; break; default: statements; }B) switch (condition) { case label: statements; default: statements; }C) switch (expression) { case label: statements; break; default: statements; }D) switch (expression) { case label: statements; default: statements; }|A
-26|What is the primary purpose of the while loop in C++?A) Execute a statement at least onceB) Repeat a statement based on a conditionC) Execute a statement for a fixed number of timesD) Execute a statement until a condition is false|B
-27|Which loop is most suitable when the number of iterations is known beforehand in C++?A) while loopB) for loopC) do...while loopD) switch loop|B
-28|What is the general syntax of a for loop in C++?A) for (initialization; condition; update) { statements; }B) for (initialization; condition) { statements; }C) for (condition; update) { statements; }D) for (expression) { statements; }|A
-29|What is the primary purpose of a function prototype in C++?A) Define the body of a functionB) Declare a function before it is definedC) Declare variables inside a functionD) Specify the return type of a function|B
-30|By default, how are parameters passed to a function in C++?A) By valueB) By referenceC) By pointerD) By name|A
-31|What does the default behavior of passing parameters by value in C++ entail?A) Changes to parameters inside the function affect original valuesB) Original values are copied into function parametersC) References to original values are passedD) Pointers to original values are passed|B
-32|What is the purpose of a function prototype in C++?A) To declare variables inside a functionB) To define the body of a functionC) To specify the return type of a functionD) To declare a function before it is defined|D
-33|Which loop structure is useful when you need to execute a statement at least once in C++?A) while loopB) for loopC) do...while loopD) switch loop|C
-34|In C++, what kind of values are considered false in condition evaluation?A) Values greater than zeroB) Values less than zeroC) Zero-valued expressionsD) Non-integer expressions|C
-35|What is the primary purpose of the switch statement in C++?A) Execute a statement if a condition is trueB) Execute a statement if a condition is falseC) Provide an alternate syntax for if-else statementsD) Choose among several actions based on the value of an expression|D
-36|What is the role of the preprocessor directives in a C++ program?A) Modify the behavior of the compilerB) Execute program statements sequentiallyC) Define hardware componentsD) Declare variables|A
-37|Which preprocessor directive is used to include standard input/output library in a C++ program?A) #include <iostream>B) #include <stdio.h>C) #include <cstdlib>D) #include <cstring>|A
-38|In C++, what happens if no break statement is included in a case of a switch structure?A) The program stops executionB) It causes a compilation errorC) Control falls through to the next caseD) It executes the default case|C
-39|What is the primary purpose of the cin and cout objects in C++?A) To perform arithmetic operationsB) To handle file input/outputC) To manipulate stringsD) To read from and write to the standard input/output streams|D
-40|What is the purpose of the break statement in a switch structure?A) To exit the loopB) To skip the current iterationC) To jump to the next caseD) To exit the switch structure|D
-41|In C++, what does the following statement achieve: list[5] = list[3] + list[6];?A) It initializes the array list with valuesB) It calculates the sum of elements at indices 3 and 6C) It assigns the value of index 3 to index 5D) It assigns the value of index 6 to index 5|B
-42|Which loop is best suited for situations where the number of repetitions is known in advance?A) while loopB) for loopC) do...while loopD) if-else loop|B
-43|What is the primary difference between a while loop and a do...while loop in C++?A) The while loop always executes at least onceB) The do...while loop does not have a loop conditionC) The while loop has an exit condition at the endD) The do...while loop does not support nested loops|A
-44|What is the general form of a for loop in C++?A) for (initialization; condition; update)B) for (condition; update; initialization)C) for (update; condition; initialization)D) for (condition; initialization; update)|A
-45|What is the syntax for declaring a one-dimensional array in C++?A) int num[5];B) int[num];C) int num();D) int[] num;|A
-46|What is the significance of the index in an array?A) It specifies the data type of the arrayB) It determines the size of the arrayC) It specifies the position of a component in the arrayD) It initializes the array|C
-47|How are arrays initialized during declaration in C++?A) By specifying the array size and values within bracesB) By providing only the array sizeC) By using the new keywordD) By declaring the data type of the array|A
-48|Which of the following statements is illegal in C++ when working with arrays?A) int list[10] = {0};B) int list[10] = {8, 5, 12};C) int list[];D) int list[10];|C
-49|What is the purpose of a two-dimensional array?A) To store data of different data typesB) To store data in a single dimensionC) To arrange data in two dimensionsD) To perform aggregate operations|C
-50|How are two-dimensional arrays declared in C++?A) int[rows][columns] arr;B) int arr[rows][columns];C) int arr[][];D) int arr[];|B
-51|How can two-dimensional arrays be initialized in C++?A) By specifying the number of rows and columns within bracesB) By providing values for each element of the arrayC) By using the new keywordD) By declaring the data type of the array|B
-52|What is the purpose of reference parameters in C++ functions?A) To make a copy of the actual parameterB) To access the memory address of the actual parameterC) To avoid passing parameters by valueD) To declare the data type of the parameter|B
-53|When are reference parameters useful in C++ functions?A) When you want to change the actual parameterB) When you want to declare multiple parametersC) When you want to return multiple values from a functionD) When you want to avoid passing parameters by reference|A
-54|How are arrays passed to functions in C++?A) By valueB) By referenceC) By pointerD) By name|B
-55|What is the role of the '&' symbol in C++ reference parameters?A) It specifies the data type of the parameterB) It indicates that the parameter is passed by valueC) It accesses the memory address of the actual parameterD) It defines the size of the parameter|C
-56|In C++, what happens when you manipulate a value parameter within a function?A) The actual parameter changesB) The function returns the manipulated valueC) The function terminatesD) The actual parameter remains unchanged|D
-57|Which type of parameter is useful when you want to change the actual parameter in a function?A) Value parameterB) Reference parameterC) Pointer parameterD) Constant parameter|B
-58|Why are arrays passed by reference in C++ functions?A) To save memory spaceB) To make a copy of the arrayC) To avoid passing parameters by valueD) To increase execution time|A
-59|What happens if the size of an array is provided as a formal parameter in a C++ function?A) It determines the size of the arrayB) It is used to initialize the arrayC) It is ignored by the compilerD) It may lead to a compile-time error|C
-60|What is the primary difference between a class and a structure in C++?A) Classes are secure and can hide implementation details, while structures cannotB) Structures are private by default, while classes are public by defaultC) Classes represent objects with methods and encapsulation, while structures are used for grouping data membersD) Structures can have constructors and destructors, while classes cannot|C
-61|What is the purpose of a constructor in C++ classes?A) To delete objects properlyB) To initialize objects upon creationC) To free dynamic memoryD) To perform program housekeeping|B
-62|How is a destructor defined in a C++ class?A) By using the keyword 'destroy' followed by the class nameB) By using the class name followed by a colonC) By using the character '~' followed by the class nameD) By using the keyword 'delete' followed by the class name|C
-63|What happens if a class does not define its own destructor in C++?A) The compiler generates a default destructorB) The class cannot be instantiatedC) The destructor must be explicitly called in the main functionD) It results in a compilation error|A
-64|How is an object's constructor automatically called in C++?A) By using the 'new' keywordB) By invoking the destructorC) When the object goes out of scopeD) Upon the object's creation|D
-65|What does the 'this' pointer refer to in C++ classes?A) It refers to the base classB) It refers to the derived classC) It refers to the current objectD) It refers to the static members of the class|C
-66|When is a class destructor automatically executed in C++?A) When the class object is createdB) When the class object goes out of scopeC) When the class is declaredD) When the class inherits from another class|B
-67|What is the purpose of overloading a constructor in C++?A) To create multiple instances of the same classB) To allow dynamic memory allocationC) To initialize objects with different parametersD) To delete objects properly|C
-68|How are objects created using a constructor in C++?A) By calling the constructor explicitlyB) By using the 'delete' keywordC) By invoking the class name followed by parenthesesD) By using the 'new' keyword|C
-69|What is the significance of static member variables in C++ classes?A) They exist only when an object of the class is createdB) They are accessible using the 'this' pointerC) They are shared among all objects of the classD) They are initialized by the destructor|C
-70|What is the syntax for accessing a static member variable of a class in C++?A) class_name::variable_nameB) class_name.variable_nameC) class_name->variable_nameD) variable_name::class_name|A
-71|When are reference parameters useful in C++ functions?A) When you want to change the actual parameterB) When you want to declare multiple parametersC) When you want to return multiple values from a functionD) When you want to avoid passing parameters by reference|A
-72|What is the purpose of passing an object by reference in C++?A) To save memory spaceB) To make a copy of the objectC) To avoid passing parameters by valueD) To increase execution time|C
-73|How are arrays of class objects created in C++?A) By using the 'new' keywordB) By specifying the array size and values within bracesC) By invoking the class constructor with subscript notationD) By declaring an array of class pointers|B
-74|What is the role of the '&' symbol in C++ reference parameters?A) It specifies the data type of the parameterB) It indicates that the parameter is passed by valueC) It accesses the memory address of the actual parameterD) It defines the size of the parameter|C
-75|What is the purpose of a structure in C++?A) To model objects with methods and encapsulationB) To represent records and group heterogeneous data membersC) To create secure data typesD) To define constructors and destructors|B
-76|What happens when an object is assigned to another object in C++?A) The objects become independent copies of each otherB) The objects share the same memory spaceC) The object's destructor is calledD) The object's constructor is called|B
-77|How is a structure different from a class in C++?A) Structures are not secure, while classes are secureB) Structures have private members by default, while classes have public membersC) Structures can have constructors and destructors, while classes cannotD) Structures are used for grouping data members, while classes represent objects with methods and encapsulation|D
-78|What is the default access level for members of a class in C++?A) PublicB) ProtectedC) PrivateD) Static|C
-79|What is the purpose of the scope resolution operator (::) in C++?A) To access static member variablesB) To access member functions outside the class definitionC) To specify the data type of a variableD) To define the size of an array|B
-80|What does a pointer store in C++?A) Memory addressB) Variable valueC) Data typeD) Function reference|A
-81|What is the purpose of the asterisk (*) in C++ pointer declarations?A) Multiply valuesB) IndirectionC) Define data typeD) Declare pointers|B
-82|How are pointer variables initialized in C++?A) Using nullptrB) AutomaticallyC) Must be explicitly initializedD) Using new keyword|C
-83|Which operator is used to obtain the memory address of a variable in C++?A) &B) *C) ->D) ::|A
-84|What is the role of the dereferencing operator (*) in C++?A) Accessing memory addressB) Defining data typesC) Indirectly accessing value at an addressD) Declaring pointers|C
-85|What happens when you pass a pointer to a function in C++?A) Value is copiedB) Memory address is copiedC) Function is executedD) Variable is destroyed|B
-86|How can you access the value pointed to by a pointer in C++?A) Using the dot operatorB) Using the arrow operatorC) Using the asterisk operatorD) Using the ampersand operator|C
-87|What is the purpose of the arrow operator (->) in C++?A) Accessing memory addressB) Defining data typesC) Indirectly accessing members of a class or struct via a pointerD) Declaring pointers|C
-88|What is the difference between static and dynamic memory allocation in C++?A) Static allocation occurs at runtime, while dynamic allocation occurs at compile timeB) Static allocation is managed by the programmer, while dynamic allocation is automaticC) Static allocation involves fixed-size memory, while dynamic allocation allows variable-size memoryD) Static allocation is slower than dynamic allocation|C
-89|How do you deallocate dynamic memory in C++?A) Using the delete keywordB) AutomaticallyC) Using nullptrD) By setting variables to NULL|A
-90|What is a dangling pointer in C++?A) A pointer that points to a valid memory addressB) A pointer that points to a memory address that has been deallocatedC) A pointer that is uninitializedD) A pointer that is declared but never used|B
-91|How do you prevent memory leaks in C++?A) By avoiding the use of pointersB) By using only static memory allocationC) By explicitly deallocating dynamic memory when no longer neededD) By increasing the stack size|C
-92|What is the default value of a pointer in C++ if it is not initialized?A) 0B) nullptrC) UndefinedD) Depends on the compiler|C
-93|What is the significance of setting a pointer to nullptr after deallocating memory?A) Prevents memory leaksB) Releases the memory immediatelyC) Invalidates the pointerD) Ensures the pointer points to a valid memory address|A
-94|What is the purpose of the new keyword in C++?A) Allocates memory for dynamic variablesB) Defines new data typesC) Initializes static variablesD) Reserves memory for arrays|A
-95|What is the role of the delete keyword in C++?A) Allocates memoryB) Deallocates memoryC) Copies memoryD) Initializes memory|B
-96|Which segment of the address space in a program holds dynamic variables?A) Code segmentB) Data segmentC) StackD) Heap|D
-97|What does the expression (*ptr).value() in C++ represent?A) Dereferencing a pointerB) Accessing a member function via a pointerC) Accessing a data member via a pointerD) Initializing a pointer|B
-98|What does the expression ptr->value() in C++ represent?A) Dereferencing a pointerB) Accessing a member function via a pointerC) Accessing a data member via a pointerD) Initializing a pointer|C
-99|How does C++ ensure type safety when using pointers?A) By restricting pointer arithmeticB) By automatically initializing pointersC) By disallowing pointers altogetherD) By enforcing strict naming conventions|A
-100|What is the significance of the ampersand (&) operator in C++?A) Returns the memory address of a variableB) Indicates a reference variableC) Denotes the size of a variableD) Represents the bitwise AND operation|A
-101|What is the purpose of linked lists?A) To store data in contiguous memory blocksB) To organize and process data in memoryC) To provide fast random access to elementsD) To eliminate the need for pointers|B
-102|What is a key advantage of array lists over linked lists?A) Fixed array sizeB) Slow insertion operationsC) Fast random accessD) Limited memory usage|C
-103|Which data structure allows for fast random access to any element?A) Linked listB) Array listC) StackD) Queue|B
-104|What component does every node in a linked list (except the last) contain?A) DataB) Pointer to the previous nodeC) Link to the next nodeD) Head pointer|C
-105|What does the NULL link field in the last node of a linked list indicate?A) The end of the listB) A circular referenceC) The presence of a loopD) An empty list|A
-106|Which pointer allows access to the elements of a linked list?A) Current pointerB) Head pointerC) Last pointerD) Node pointer|B
-107|How can the number of elements in a linked list be determined?A) By accessing the head nodeB) By counting the number of NULL linksC) By traversing the entire listD) By using an index variable|C
-108|What does a head variable in a linked list store?A) Address of the last nodeB) Address of the previous nodeC) Address of the first nodeD) Address of the current node|C
-109|Why is it necessary to create a new node in the heap when inserting into a linked list?A) To conserve memoryB) To avoid memory leaksC) To simplify the codeD) To speed up insertion|B
-110|What happens if a new node is created in the stack during insertion?A) Memory leak occursB) Stack overflow errorC) Dangling pointer issueD) Memory fragmentation|C
-111|What is the primary purpose of the destructor in a linked list class?A) To create new nodesB) To prevent memory leaksC) To access list elementsD) To manage stack memory|B
-112|Which operation is used to calculate the size of a linked list?A) getSize()B) insert()C) clear()D) traverse()|A
-113|Which method is used to clear a linked list?A) delete()B) clear()C) remove()D) empty()|B
-114|How can the size of a linked list be updated during insertion?A) By subtracting from the current sizeB) By adding to the current sizeC) By multiplying the current sizeD) By dividing the current size|B
-115|What does the size field in a linked list data structure represent?A) Number of nodes in the listB) Total memory allocatedC) Size of each nodeD) Index of the last node|A
-116|What happens if a linked list is not properly cleared?A) Memory leak occursB) Stack overflow errorC) Dangling pointer issueD) Index out of bounds error|A
-117|Which operation is used to access list elements by index?A) getSize()B) insert()C) get()D) traverse()|C
-118|What is the primary advantage of using a linked list over an array list?A) Fast random accessB) Fixed array sizeC) Flexible sizeD) Sequential access|C
-119|What operation is necessary to determine if an item is in the list?A) getSize()B) insert()C) search()D) delete()|C
-120|Which component of a linked list node stores relevant information?A) LinkB) PointerC) DataD) Index|C
-121|What operation determines the existence of an item in a linked list?A) AddB) SearchC) RemoveD) Sort|B
-122|What is the key field parameter in a linked list search function?A) IndexB) ValueC) SizeD) Length|B
-123|What is the time complexity for accessing an element at a given index in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C
-124|What method is used to get the element's info at a given index?A) getItemAtB) getItemInfoC) accessItemD) getElement|A
-125|How is the first element deleted in a linked list?A) deleteStartB) removeFirstC) deleteFirstD) removeStart|C
-126|How is the last element deleted in a linked list?A) deleteEndB) removeLastC) deleteLastD) removeEnd|A
-127|What method is used to delete an item at an arbitrary index in a linked list?A) deleteItemAtB) removeItemC) deleteItemD) removeItemAt|D
-128|What is the time complexity for deleting an item at an arbitrary index in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C
-129|What is the primary purpose of the link field in a linked list node?A) Store dataB) Identify nodeC) Point to the next nodeD) Store index|C
-130|What happens if an attempt is made to access an element at an index beyond the bounds of the linked list?A) Index out of range errorB) Null pointer exceptionC) Memory leakD) Index out of bound|A
-131|When traversing a linked list,what is compared with the desired value to search for an item?A) IndexB) PointerC) InfoD) Size|C
-132|What type of error may occur if a new node is created in the stack during insertion?A) Memory leakB) Stack overflow errorC) Dangling pointer issueD) Memory fragmentation|C
-133|What is the time complexity for deleting the last item in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C
-134|Linked lists can be used to implement a queue data structure efficiently.A) TrueB) False|A
-135|What modification is required in the constructor of a linked list to accommodate efficient insertion at the end?A) Initializing size to 1B) Setting head to NULLC) Initializing tail to NULLD) Allocating memory for a new node|C
-136|In a linked list,which operation's efficiency is not improved by using a tail pointer?A) Inserting at the beginningB) Deleting from the beginningC) Inserting at the endD) Deleting from the end|A
-137|Which method allows reversed traversal of a linked list using recursion?A) printReverse()B) traverseBackward()C) reverseTraversal()D) backwardPrint()|A
-138|Which approach is more efficient for reversed traversal of a linked list?A) Using a nested loopB) Using recursionC) Using a doubly linked listD) Using an array|B
-139|What is the main advantage of using doubly linked lists?A) Efficient insertion at the beginningB) Efficient traversal in both directionsC) Reduced memory consumptionD) Simplified implementation of insertions|B
-140|What application can benefit from the use of doubly linked lists?A) Implementing a stackB) Implementing a queueC) Implementing back and forward buttons in a web browserD) Implementing a binary search tree|C
-141|How can doubly linked lists improve traversal to reach an item at a given index?A) By starting from the middleB) By starting from the endC) By starting from both ends simultaneouslyD) By using a recursive approach|C
-142|Which data structure is suitable for implementing back and forward buttons in a web browser?A) Singly linked listB) Doubly linked listC) Circular linked listD) Array|B
-143|What characteristic distinguishes a circular linked list from a normal linked list?A) It stores NULL at the end nodeB) It has a limited number of elementsC) Its last node points to the first nodeD) It allows bidirectional traversal|C
-144|What operation must be handled differently in a circular linked list compared to a normal linked list?A) Insertion at the beginningB) Deletion from the beginningC) Insertion at the endD) Deletion from the end|A
-145|Which operation's efficiency does not improve significantly in a circular linked list compared to a normal linked list?A) TraversalB) Insertion at the beginningC) Insertion at the endD) Deletion from the end|A
-146|What modification is necessary in a circular linked list's insertion at the beginning compared to a normal linked list?A) Initializing head to NULLB) Allocating memory for a new nodeC) Setting the tail pointer to the new nodeD) Making the last node point to the new node|D
-147|What operation is performed differently in a circular doubly linked list compared to a circular linked list?A) TraversalB) Insertion at the beginningC) Deletion from the beginningD) Insertion at the end|B
-148|Which factor is critical in determining whether to use an array or a linked list?A) Time complexity of operationsB) Length of the codeC) Availability of memoryD) Ease of implementation|A
-149|When is a linked list preferred over an array?A) When dynamic addition and expansion are requiredB) When lots of random access is necessaryC) When searching and items are unsortedD) When memory consumption is a concern|A
-150|What operation is efficient in a circular doubly linked list compared to a circular linked list?A) Traversal from beginning to endB) Traversal from end to beginningC) Insertion at the beginningD) Insertion at the end|C
-151|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?A) Insertion at the beginningB) Insertion at the endC) Deletion from the beginningD) Deletion from the end|D
-152|What is a significant advantage of circular doubly linked lists?A) Efficient memory utilizationB) Ability to store a large number of elementsC) Natural implementation of round-robin schedulingD) Bidirectional traversal efficiency|D
-153|What operation is performed differently in a circular doubly linked list compared to a circular linked list?A) TraversalB) Insertion at the beginningC) Deletion from the beginningD) Insertion at the end|B
-154|Which factor is critical in determining whether to use an array or a linked list?A) Time complexity of operationsB) Length of the codeC) Availability of memoryD) Ease of implementation|A
-155|When is a linked list preferred over an array?A) When dynamic addition and expansion are requiredB) When lots of random access is necessaryC) When searching and items are unsortedD) When memory consumption is a concern|A
-156|What operation is efficient in a circular doubly linked list compared to a circular linked list?A) Traversal from beginning to endB) Traversal from end to beginningC) Insertion at the beginningD) Insertion at the end|C
-157|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?A) Insertion at the beginningB) Insertion at the endC) Deletion from the beginningD) Deletion from the end|D
-158|What is a significant advantage of circular doubly linked lists?A) Efficient memory utilizationB) Ability to store a large number of elementsC) Natural implementation of round-robin schedulingD) Bidirectional traversal efficiency|D
-159|What application can benefit from the use of doubly linked lists?A) Implementing a stackB) Implementing a queueC) Implementing back and forward buttons in a web browserD) Implementing a binary search tree|C
-160|How can doubly linked lists improve traversal to reach an item at a given index?A) By starting from the middleB) By starting from the endC) By starting from both ends simultaneouslyD) By using a recursive approach|C
-161|What operation in a stack adds an element onto the stack?A) topB) pushC) popD) isEmpty|B
-162|In the context of stack operations, what does the top operation do?A) Removes the top element from the stackB) Adds an element onto the stackC) Peeks at the top element of the stack without removing itD) Checks if the stack is empty|C
-163|Which application utilizes the stack concept for parentheses matching?A) Sorting algorithmsB) Parentheses balancingC) Searching algorithmsD) String manipulation|B
-164|What is the expected behavior of the isEmpty operation in a stack?A) It returns true if the stack is fullB) It returns true if the stack is not emptyC) It returns true if the stack is emptyD) It returns true if the stack is balanced|C
-165|What algorithm is used for parentheses matching?A) Depth-first searchB) Breadth-first searchC) Greedy algorithmD) Stack-based algorithm|D
-166|How is the stack data structure represented using arrays?A) Elements are stored in a linked listB) Elements are stored in a circular bufferC) Elements are stored in a two-dimensional arrayD) Elements are stored in a one-dimensional array|D
-167|Which operation checks if the stack is empty?A) isEmptyB) pushC) popD) top|A
-168|What is the purpose of the pop operation in a stack?A) To add an element onto the stackB) To peek at the top element of the stackC) To remove the top element from the stackD) To check if the stack is empty|C
-169|In which application is the infix to postfix evaluation method used?A) Database managementB) Compiler designC) Graphics renderingD) Network routing|B
-170|How is the stack data structure represented using linked nodes?A) Elements are stored in an arrayB) Elements are stored in a tree structureC) Elements are stored in linked nodesD) Elements are stored in a hash table|C
-171|What is the purpose of the infix to postfix evaluation method?A) To convert arithmetic expressions from postfix to infix notationB) To convert arithmetic expressions from infix to postfix notationC) To evaluate arithmetic expressions in postfix notationD) To evaluate arithmetic expressions in infix notation|B
-172|Which operation is used to add an element onto the stack?A) topB) pushC) popD) isEmpty|B
-173|What is the key characteristic of a stack data structure?A) First In First Out (FIFO)B) Last In First Out (LIFO)C) Random accessD) Bidirectional access|B
-174|Which operation removes the top element from the stack?A) topB) pushC) popD) isEmpty|C
-175|In postfix evaluation, what is done when an operand is encountered?A) It is outputted immediatelyB) It is pushed onto the stackC) It is popped from the stackD) It is added to the top of the stack|B
-176|What does the acronym LIFO stand for in the context of stacks?A) Last In First OutB) Lost In First OutC) Last In Fifth OutD) Last Into First Out|A
-177|Which of the following is NOT a standard operation of a stack?A) pushB) addC) popD) top|B
-178|Which data structure is used to implement a stack using a linked list?A) ArrayB) QueueC) TreeD) Graph|C
-179|What happens when a right parenthesis is encountered in parentheses matching and the stack is empty?A) The right parenthesis is added to the stackB) An error is raisedC) The right parenthesis is ignoredD) The algorithm terminates|B
-180|In the infix to postfix evaluation algorithm, what is done when a closing parenthesis is encountered?A) All operators in the stack are popped until an opening parenthesis is encounteredB) All operands in the stack are popped until a closing parenthesis is encounteredC) The closing parenthesis is pushed onto the stackD) The algorithm terminates|A
-181|What is a queue in data structures?A) A list of homogeneous elementsB) A list of heterogeneous elementsC) A list of elements added at the frontD) A list of elements deleted from the front|A
-182|What is the characteristic feature of a FIFO data structure?A) Elements are added at the backB) Elements are added at the frontC) Elements are deleted from the backD) Elements are deleted from the front|D
-183|In a queue, how are elements added and deleted?A) Added at the front, deleted from the backB) Added at the back, deleted from the frontC) Added at the front, deleted from the frontD) Added at the back, deleted from the back|B
-184|What is a common real-life example of a queue?A) A stack of booksB) A group of people waiting in lineC) A random collection of itemsD) A pool of resources|B
-185|What is a priority queue?A) A queue where elements are added based on priorityB) A queue with fixed sizeC) A queue where elements are added randomlyD) A queue where elements are added alphabetically|A
-186|What are the standard operations in a queue?A) addQueue, removeQueue, isEmptyB) addQueue, deleteQueue, isFullC) addQueue, deleteQueue, isEmptyD) addQueue, deleteFront, deleteRear|C
-187|How is a queue implemented using arrays?A) Elements are added using a rear indexB) Elements are added using a front indexC) Elements are removed using a rear indexD) Elements are removed using a front index|A
-188|What issue arises with a fixed-size array implementation of a queue?A) Memory leaksB) Dangling pointersC) Queue overflowD) Circular array handling|C
-189|How is a queue implemented using linked lists?A) Elements are added at the beginningB) Elements are added at the endC) Elements are removed from the beginningD) Elements are removed from the end|B
-190|What are the four data members of a queue implemented using arrays?A) Array, front index, rear index, maximum sizeB) Array, front index, rear index, countC) Linked nodes, front pointer, rear pointer, countD) Array, head pointer, tail pointer, size|B
-191|How is a new element added to the end of a queue implemented using arrays?A) Advance front indexB) Advance rear indexC) Add element at front indexD) Add element at rear index|B
-192|How is the size of a queue determined in the linked list implementation?A) By the number of elementsB) By the maximum capacityC) By the front pointerD) By the rear pointer|A
-193|What does the deleteQueue operation in a queue return?A) The first elementB) The last elementC) The middle elementD) The highest priority element|A
-194|In the linked list implementation, what is stored in the queueRear pointer?A) Address of the first nodeB) Address of the last nodeC) Number of elementsD) Address of the next node|B
-195|How is the count variable used to determine if a queue is empty?A) Incremented when an element is addedB) Decremented when an element is addedC) Incremented when an element is removedD) Decremented when an element is removed|C
-196|What is the purpose of the lastOpAddQ boolean variable in queue implementation?A) To track the last operation performedB) To determine the queue sizeC) To check if the queue is fullD) To indicate if an element was recently added|D
-197|What is the role of the count variable in queue implementation?A) To store the maximum capacityB) To track the last operation performedC) To indicate the number of elementsD) To determine if the queue is full|C
-198|How is memory deallocated to avoid dangling pointers in queue implementation?A) Using deleteFront operationB) Using deleteRear operationC) Using the delete operatorD) Using the new operator|C
-199|Which operator creates dynamic variables in queue implementation?A) deleteB) deleteFrontC) newD) newFront|C
-200|In the provided code snippet, what is the purpose of the system("pause") statement?A) To pause the program executionB) To clear the screenC) To wait for user inputD) To display a message|C
-201|What type of data structure is suitable for hierarchically organized data items?A) Linked listsB)TreesC)StacksD)Queues|B
-202|What is the top-level node in a tree called?A) ParentB) LeafC) RootD) Child|C
-203|What do you call nodes at the same level in a tree?A) DescendantsB) ParentsC) SiblingsD) Leaves|C
-204|What is the maximum degree of all nodes in a tree?A) Tree degreeB) Node degreeC) Leaf degreeD) Branching degree|A
-205|What is the number of children a node can have?A) Node degreeB) Tree degreeC) Leaf degreeD) Parent degree|A
-206|The height of a tree is the number of nodes in it. Answer True or False?A) TrueB) False|B
-207|What term is used to describe nodes in a tree data structure that have no children?A) LeavesB) RootsC) BranchesD) Stems|A
-208|In a tree data structure, all nodes except the root have exactly one parent. Answer True or False?A) TrueB) False|A
-209|File directories in computer science are represented using tree structures. Answer True or False?A) TrueB) False|A
-210|In a binary tree, what is the maximum number of children a node can have?A) OneB) TwoC) ThreeD) Four|B
-211|How many nodes does a full binary tree of height (h) have?A) 2hB) 2h−1C) h2D) h|A
-212|A binary tree with n nodes has a height of at least log2(n+1). Answer True or False?A) TrueB) False|A
-213|What are the two sets of nodes in a binary tree called?A) Left and right nodesB) Left subtree and right subtreeC) Left and right childrenD) Left and right branches|B
-214|In array representation, each element is stored at an array position corresponding to its assigned number. Answer True or False?A) TrueB) False|A
-215|How does linked representation of a binary tree connect parent and child nodes?A) ArraysB) Linked listsC) StacksD) Queues|B
-216|Common binary tree operations include determining height, counting nodes and leaves, and traversing the tree. Answer True or False?A) TrueB) False|A
-217|How long should the array be for a complete binary tree with n nodes?A) n2B) n+1C) 2nD) n+1|D
-218|How long should the array be for a right-skewed binary tree with n nodes?A) nB) 2nC) n+1D) 2^n|D
-219|What are the four different traversal methods are commonly used for binary trees?A) Pre-order, In-order, Post-order, Level-orderB) Depth-first, Breadth-first, Pre-order, Post-orderC) In-order, Level-order, Breadth-first, Depth-firstD) Depth-first, In-order, Post-order, Level-order|A
-220|During which traversal method is the root node visited last?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|C
-221|Which traversal method visits the nodes from left to right at each level of the tree before moving to the next level?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|D
-222|What traversal method involves traversing the left subtree, visiting the node, and then traversing the right subtree?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|B
-223|In which traversal method is the sequence of actions "visit the node, traverse the left subtree, traverse the right subtree"?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|A
-224|What structure is introduced to efficiently perform operations such as searching, insertion, and deletion in a binary tree?A) AVL TreeB) B-treeC) Binary Search TreeD) Heap|C
-225|A node is reached from the root by what?A) BranchB) PathC) RouteD) Trail|B
-226|What is the maximum number of nodes we can get from a binary tree when the height of the tree is 5?A) 15B) 31C) 63D) 127|B
-227|Determine the minimum number of nodes we can get from a binary tree when the height of the tree is 3.A) 2B) 3C) 4D) 5|B
-228|Determine the minimum height we can get from a binary tree when the number of nodes is 23.A) 4B) 5C) 6D) 7|B
-229|Determine the maximum height we can get from a binary tree when the number of nodes is 7.A) 3B) 4C) 5D) 6|A
-230|In a Binary Search Tree (BST), what property ensures that the left subtree of any node contains only nodes with keys less than the node's key?A) Every vertex is connected to every other vertexB) The left subtree contains only nodes with keys greater than the node's keyC) The right subtree contains only nodes with keys greater than the node's keyD) There must be no duplicate keys among the nodes|A
-231|How does the insertion process work in a Binary Search Tree (BST)?A) New nodes are always inserted as the root of the treeB) New nodes are inserted randomly within the treeC) New nodes are inserted as leaves at the end of a search pathD) New nodes are inserted based on their key value without any specific order|C
-232|Which method is used to find a specific node in a Binary Search Tree (BST)?A) Breadth-first searchB) Depth-first searchC) Linear searchD) Binary search|D
-233|What defines the maximum-key node in a Binary Search Tree (BST)?A) The rightmost node in the treeB) The leftmost node in the treeC) The root node of the treeD) The node with the highest key value|A
-234|What defines the minimum-key node in a Binary Search Tree (BST)?A) The rightmost node in the treeB) The leftmost node in the treeC) The root node of the treeD) The node with the lowest key value|B
-235|What must be ensured during the deletion process in a Binary Search Tree (BST) to maintain its structure?A) The node to be deleted must be a leaf nodeB) The node to be deleted must have a left subtreeC) The node to be deleted must have a right subtreeD) The resulting tree after deletion must remain a binary search tree|D
-236|Which special type of binary trees maintains the properties of BSTs?A) AVL TreesB) Red-Black TreesC) B-treesD) Trie Trees|A
-237|When inserting nodes into a Binary Search Tree (BST), what determines the shape of the resulting tree?A) The value of the nodes being insertedB) The height of the treeC) The order of insertion operationsD) The number of nodes in the tree|C
-238|What is the worst-case time complexity for finding a node in a Binary Search Tree (BST) with n elements?A) O(1)B) O(log n)C) O(n)D) O(n^2) |B
-239|Which operation is used to find the node with a specific key value in a Binary Search Tree (BST)?A) insert()B) delete()C) search()D) max()|C
-240|What is the primary purpose of AVL Trees?A) To maintain a balanced binary search treeB) To perform fast search operationsC) To store key-value pairs efficientlyD) To implement dynamic arrays|A
-241|In a complete binary search tree, what is the maximum number of nodes in the last level?A) 2^(h-1)B) 2^(h-1) - 1C) 2^h - 1D) 2^h|A
-242|Which of the following cases represents a situation where a node in a Binary Search Tree (BST) has both left and right subtrees?A) Case 1: The node to be deleted is a leafB) Case 2: The node to be deleted has no left subtreeC) Case 3: The node to be deleted has no right subtreeD) Case 4: The node to be deleted has nonempty left and right subtrees|D
-243|How does the delete() operation handle the case where the node to be deleted is a leaf node?A) It replaces the node with its right childB) It replaces the node with its left childC) It removes the node from the treeD) It updates the root of the tree|C
-244|What is the primary advantage of using AVL Trees in comparison to regular Binary Search Trees?A) AVL Trees require less memory spaceB) AVL Trees ensure faster search operationsC) AVL Trees maintain a balanced structureD) AVL Trees support duplicate keys|C
-245|Which algorithm is used to re-balance an AVL Tree after insertion or deletion operations?A) Depth-first searchB) Breadth-first searchC) RotationD) Insertion sort|C
-246|How does the insertion process affect the shape of a Binary Search Tree (BST)?A) It always produces a balanced treeB) It can result in different tree shapes based on the insertion orderC) It creates a complete binary treeD) It maintains a constant height for the tree|B
-247|In a Binary Search Tree (BST), what is the primary purpose of the search() operation?A) To insert a new node into the treeB) To find the maximum-key node in the treeC) To search for a specific node with a given keyD) To delete a node from the tree|C
-248|Which of the following is true regarding AVL Trees?A) They are unbalanced binary search treesB) They always have a height of 2C) They maintain a balanced structure using rotationsD) They allow duplicate keys in the tree|C
-249|What is the time complexity of the max() operation in a Binary Search Tree (BST)?A) O(1)B) O(log n)C) O(n)D) O(n^2) |B
-250|How does the delete() operation handle the case where the node to be deleted has nonempty left and right subtrees?A) It replaces the node with its left childB) It replaces the node with its right childC) It replaces the node with the maximum node from its left subtreeD) It removes the node and re-balances the tree using rotations|C
-251|Which data structure is composed of vertices (nodes) and edges (links/arcs)?A) TreeB) GraphC) Linked ListD) Stack|B
-252|What component of a graph describes relationships among the objects represented by vertices?A) VertexB) EdgeC) RootD) Leaf|B
-253|Graphs are solely used in the analysis of electrical circuits and network communications, finding shortest route between two places and many more. Answer True or False?A) TrueB) False|A
-254|Graphs are useful for representing linear relationships between objects/entities. Answer True or False?A) TrueB) False|A
-255|What typically represents a point or entity in a graph?A) EdgeB) VertexC) LinkD) Arc|B
-256|What does "x ∈ A∪B" signify in set theory?A) Intersection of sets A and BB) Subset of set A by set BC) Union of sets A and BD) Cartesian product of sets A and B|C
-257|What does x∈A∪B signify in set theory?A) IntersectionB) UnionC) SubsetD) Superset|B
-258|What distinguishes a directed graph from an undirected graph?A) Arrows on edgesB) More verticesC) CyclesD) More edges|A
-259|What is a simple path in a graph?A) No verticesB) One vertexC) No repeated verticesD) Repeated vertices|C
-260|What does it mean for two vertices uu and vv to be adjacent in a graph?A) Connected by an edgeB) Same degreeC) Connected by a pathD) Not connected|A
-261|What is the degree of a node in a graph?A) Adjacent verticesB) Incident edgesC) CyclesD) Connected components|B
-262|What does x∈A∩B signify in set theory?A) UnionB) IntersectionC) SubsetD) Superset|B
-263|What defines the Cartesian product A×B of sets A and B?A) Set of all ordered pairs where the first element is from A and the second from BB) Set of all unordered pairs where the elements can be from A or BC) Set of all elements that belong to either A or BD) Set of all subsets of A and B|A
-264|What is the primary characteristic of a directed graph?A) Bidirectional edgesB) Unidirectional edgesC) Complete connectivityD) Acyclic structure|B
-265|What is a cycle in a graph?A) A path with no repeated verticesB) A path with repeated verticesC) A subgraph that forms a loopD) A subgraph without any edges|C
-266|What defines a complete graph?A) Every vertex is connected to every other vertexB) Every vertex has the same degreeC) There are no cycles in the graphD) The graph has no isolated vertices|A
-267|What is the main advantage of using an adjacency matrix for graphs?A) It saves memory spaceB) It is efficient for sparse graphsC) It facilitates edge weight storageD) It enables fast edge existence determination|D
-268|What type of graphs are adjacency lists particularly suitable for?A) Dense graphsB) Weighted graphsC) Sparse graphsD) Directed graphs|C
-269|Which data structure is typically used to store adjacent vertices in adjacency lists?A) ArraysB) Linked listsC) StacksD) Queues|B
-270|What method is used to determine the existence of an edge (i,j) in adjacency lists?A) Iterating through all verticesB) Traversing the entire graphC) Checking specific nodes in the listD) Using a hash table|C
-271|What is the size of the adjacency matrix compared to the adjacency list for sparse graphs?A) The adjacency matrix is largerB) The adjacency list is largerC) They are the same sizeD) It depends on the number of vertices|B
-272|What does each element of an adjacency matrix represent in a weighted graph?A) Vertex indexB) Edge existenceC) Edge weightD) Vertex connectivity|C
-273|In adjacency lists, what information does each node typically contain?A) Vertex indexB) Edge existenceC) Edge weightD) Adjacent vertex and link to another adjacent vertex|D
-274|What is the property of an undirected graph's adjacency matrix that ensures symmetry?A) The size of the matrixB) The number of verticesC) The values of A(i,j) and A(j,i)D) The adjacency list size|C
-275|What is the typical method used to store graphs in computer memory for processing and manipulation?A) ArraysB) Linked listsC) Both adjacency matrix and adjacency listsD) Stacks|C
-276|What are the fundamental operations typically performed on a graph?A) Creating the graphB) Adding or removing edgesC) Determining edge existenceD) All of the above|D
-277|What is the primary purpose of traversal in a graph?A) Finding the longest path between two verticesB) Determining whether a graph is cyclicC) Discovering all vertices reachable from a given vertexD) Resolving dependencies among vertices|C
-278|In a weighted graph, what defines a minimal spanning tree?A) A tree with the maximum total weightB) A tree with the minimum total weightC) A tree with the maximum number of edgesD) A tree with the minimum number of vertices|B
-279|Which algorithm constructs a minimal spanning tree by adding edges incrementally?A) Kruskal's algorithmB) Dijkstra's algorithmC) Bellman-Ford algorithmD) Prim's algorithm|D
-280|What is the primary objective of Prim's algorithm?A) To identify the longest path in a graphB) To compute the maximum weight of a treeC) To build a minimal spanning treeD) To perform topological sorting|C
-281|What does a topological sort of a directed graph aim to achieve?A) Ensuring a cyclic graphB) Resolving dependencies among tasksC) Minimizing the number of verticesD) Maximizing the number of cycles|B
-282|What is the main function of a priority queue in topological sorting?A) Maintaining vertex orderB) Storing distances between verticesC) Selecting vertices with minimum degreesD) Handling visited vertices|C
-283|Why is it significant that a graph has a spanning tree if and only if it is connected?A) It ensures the efficiency of the minimal spanning tree algorithmsB) It guarantees the existence of a minimal spanning treeC) It simplifies the traversal processD) It facilitates the identification of disconnected components|B
-284|How does Dijkstra's algorithm differ from Bellman-Ford algorithm?A) Dijkstra's works for negative-weight cycles, Bellman-Ford doesn'tB) Dijkstra's finds the shortest path to all nodes from a source, Bellman-Ford doesn'tC) Dijkstra's requires positive weights, Bellman-Ford doesn'tD) Dijkstra's algorithm finds the shortest path between two nodes, Bellman-Ford finds the shortest path between all pairs of nodes|B
-285|What is the primary challenge in finding the shortest route that visits each city once and returns to the origin city?A) Identifying the origin cityB) Determining the distances between citiesC) Resolving computational complexityD) Optimizing the route|C
-286|What is the primary function of a spanning tree in a graph?A) Maximizing the number of edgesB) Resolving dependency among verticesC) Identifying cyclesD) Connecting all vertices without cycles|D
-287|Which algorithm is used to find a minimal spanning tree by selecting edges based on their weights?A) Kruskal's algorithmB) Prim's algorithmC) Dijkstra's algorithmD) Floyd-Warshall algorithm|A
-288|What characteristic defines a minimal spanning tree?A) It maximizes the total weight of edgesB) It minimizes the total weight of edgesC) It contains the maximum number of verticesD) It contains the minimum number of edges|B
-289|How does topological sorting help in managing tasks in a project?A) By resolving dependencies among tasksB) By minimizing the number of cyclesC) By randomizing task execution orderD) By maximizing the number of edges|A
-290|What data structure is commonly used in Prim's algorithm to select edges with minimal weight?A) QueueB) StackC) Priority queueD) Hash table|C
-291|What is the primary advantage of using Kruskal's algorithm for finding a minimal spanning tree?A) It guarantees the shortest path between two verticesB) It efficiently handles negative-weight edgesC) It is suitable for cyclic graphsD) It is easy to implement|D
-292|What property ensures that a minimal spanning tree contains no cycles?A) It maximizes the total weight of edgesB) It minimizes the total weight of edgesC) It connects all vertices without forming a cycleD) It contains the maximum number of edges|C
-293|How do Dijkstra's and Floyd-Warshall's algorithms differ?A) Dijkstra's works for acyclic graphs, while Floyd-Warshall's works for cyclic graphsB) Dijkstra's finds the shortest path between two nodes, while Floyd-Warshall's finds the shortest path between all pairs of nodesC) Dijkstra's requires positive weights, while Floyd-Warshall's works for negative weightsD) Dijkstra's is based on depth-first search, while Floyd-Warshall's is based on breadth-first search|B
-294|What is the primary objective of topological sorting in a directed graph?A) To maximize the number of cyclesB) To minimize the number of edgesC) To resolve dependency among verticesD) To determine the existence of cycles|C
-295|Which algorithm is used to find the shortest path between a source node and all other nodes in a graph?A) Kruskal's algorithmB) Bellman-Ford algorithmC) Dijkstra's algorithmD) Prim's algorithm|C
-296|What is the key characteristic of a topological sort in a directed graph?A) It orders vertices based on their degreeB) It resolves dependencies among verticesC) It maximizes the number of cyclesD) It minimizes the number of edges|B
-297|What is the main limitation of using Floyd-Warshall's algorithm for finding the shortest path in a graph?A) It requires positive weightsB) It only works for acyclic graphsC) It has a high computational complexityD) It cannot handle negative cycles|D
-298|What is the primary challenge in finding the shortest possible route that visits each city once and returns to the origin city?A) Identifying the origin cityB) Determining the distances between each pair of citiesC) Resolving computational complexityD) Optimizing the route|D
-299|What is the role of a priority queue in Prim's algorithm for finding a minimal spanning tree?A) To maintain the order of verticesB) To store the distances between verticesC) To select edges with minimal weightD) To keep track of visited vertices|C
-300|What is the significance of the theorem stating that a graph has a spanning tree if and only if it is connected?A) It determines the efficiency of the minimal spanning tree algorithmsB) It ensures the existence of a minimal spanning treeC) It helps in identifying disconnected componentsD) It simplifies the traversal process|B
+﻿QuestionNumber|QuizQuestion|Answer|Score
+1|What is the primary goal of a data structure? A) Store data for later retrieval B) Execute instructions sequentially C) Define hardware components D) Define problem statements precisely|A|10
+2|What term describes indivisible data? A) Composite Data B) Atomic Data C) Scalar Data D) Primitive Data|B|10
+3|What does a data type primarily determine? A) Number of steps in an algorithm B) Kind of values a variable can store C) Set of associations in a data structure D) Number of seats in a movie theater|B|10
+4|What is the main purpose of Abstract Data Types (ADT)? A) Perform arithmetic operations B) Define low-level data structures C) Package data with meaningful operations D) Optimize memory allocation|C|10
+5|What is the definition of an algorithm ?A) Set of instructions to solve a problem B) Data declaration with meaningful operation sC) Collection of related variables D) Kind of data structure|A|10
+6|How does algorithm efficiency affect real-world performance? A) It increases memory usage B) It decreases execution time C) It has no impact D) It enhances hardware components|B|10
+7|What analogy explains the relationship between data, data structures, and algorithms?A) Classroom organizationB) Movie theater seats and finding seatsC) Cooking recipesD) Traffic flow management|B|10
+8|What resources are crucial for measuring efficiency in computing?A) Energy and speedB) Time and spaceC) Cost and materialsD) Voltage and frequency|B|10
+9|What primarily represents Big O complexity?A) Time and space balanceB) Maximum number of stepsC) Minimum number of stepsD) Average number of steps|A|10
+10|What characteristic defines simple data types?A) Can store only one value at a timeB) Can store multiple values at a timeC) Require complex algorithms for storageD) Can't be manipulated|A|10
+11|What is the primary function of a program in computing?A) Process input to generate desired outputB) Define problem statementsC) Select suitable algorithmsD) Test and debug code|A|10
+12|What is the primary aim of the Program Development Life Cycle?A) Define problem statementsB) Debug codeC) Select suitable algorithmsD) Ensure software meets user needs|D|10
+13|Which term describes data that can be broken down into subfields?A) Atomic DataB) Simple DataC) Composite DataD) Primitive Data|C|10
+14|What is the significance of selecting the best suitable algorithm?A) Increase memory usageB) Enhance hardware componentsC) Decrease execution timeD) Optimize code readability|C|10
+15|What is the primary aim of an ADT?A) Define problem statementsB) Optimize memory usageC) Package data with meaningful operationsD) Implement low-level data structures|C|10
+16|What is the primary goal of measuring efficiency in computing?A) Increase memory usageB) Decrease execution timeC) Improve code readabilityD) Optimize hardware components|B|10
+17|What term describes data stored for efficient search and retrieval?A) Atomic DataB) Composite DataC) Simple DataD) Structured Data|D|10
+18|What does the best-case complexity of an algorithm represent?A) Minimum number of stepsB) Maximum number of stepsC) Average number of stepsD) Time and space balance|A|10
+19|What does the worst-case complexity of an algorithm represent?A) Minimum number of stepsB) Maximum number of stepsC) Average number of stepsD) Time and space balance|B|10
+20|What does the preprocessor do in C++ before the compiler runs?A) Generates object codeB) Sets up the source code for the compilerC) Executes program statements sequentiallyD) Defines hardware components|B|10
+21|In C++, what is the first line of the main function commonly referred to as?A) Heading lineB) Initialization lineC) Declaration lineD) Definition line|A|10
+22|How are the cin and cout objects typically declared for use in a C++ program?A) #include <iostream>B) using namespace std;C) using std::cin; using std::cout;D) using namespace iostream;|A|10
+23|What preprocessor directive is used to include the string header file in a C++ program?A) #include <string>B) #include <iostream>C) #include "string.h"D) #include <cstring>|A|10
+24|What is the primary purpose of the if statement in C++?A) Execute a statement if a condition is trueB) Execute a statement if a condition is falseC) Execute multiple statements sequentiallyD) Define hardware components|A|10
+25|What is the general syntax of a switch structure in C++?A) switch (condition) { case label: statements; break; default: statements; }B) switch (condition) { case label: statements; default: statements; }C) switch (expression) { case label: statements; break; default: statements; }D) switch (expression) { case label: statements; default: statements; }|A|10
+26|What is the primary purpose of the while loop in C++?A) Execute a statement at least onceB) Repeat a statement based on a conditionC) Execute a statement for a fixed number of timesD) Execute a statement until a condition is false|B|10
+27|Which loop is most suitable when the number of iterations is known beforehand in C++?A) while loopB) for loopC) do...while loopD) switch loop|B|10
+28|What is the general syntax of a for loop in C++?A) for (initialization; condition; update) { statements; }B) for (initialization; condition) { statements; }C) for (condition; update) { statements; }D) for (expression) { statements; }|A|10
+29|What is the primary purpose of a function prototype in C++?A) Define the body of a functionB) Declare a function before it is definedC) Declare variables inside a functionD) Specify the return type of a function|B|10
+30|By default, how are parameters passed to a function in C++?A) By valueB) By referenceC) By pointerD) By name|A|10
+31|What does the default behavior of passing parameters by value in C++ entail?A) Changes to parameters inside the function affect original valuesB) Original values are copied into function parametersC) References to original values are passedD) Pointers to original values are passed|B|10
+32|What is the purpose of a function prototype in C++?A) To declare variables inside a functionB) To define the body of a functionC) To specify the return type of a functionD) To declare a function before it is defined|D|10
+33|Which loop structure is useful when you need to execute a statement at least once in C++?A) while loopB) for loopC) do...while loopD) switch loop|C|10
+34|In C++, what kind of values are considered false in condition evaluation?A) Values greater than zeroB) Values less than zeroC) Zero-valued expressionsD) Non-integer expressions|C|10
+35|What is the primary purpose of the switch statement in C++?A) Execute a statement if a condition is trueB) Execute a statement if a condition is falseC) Provide an alternate syntax for if-else statementsD) Choose among several actions based on the value of an expression|D|10
+36|What is the role of the preprocessor directives in a C++ program?A) Modify the behavior of the compilerB) Execute program statements sequentiallyC) Define hardware componentsD) Declare variables|A|10
+37|Which preprocessor directive is used to include standard input/output library in a C++ program?A) #include <iostream>B) #include <stdio.h>C) #include <cstdlib>D) #include <cstring>|A|10
+38|In C++, what happens if no break statement is included in a case of a switch structure?A) The program stops executionB) It causes a compilation errorC) Control falls through to the next caseD) It executes the default case|C|10
+39|What is the primary purpose of the cin and cout objects in C++?A) To perform arithmetic operationsB) To handle file input/outputC) To manipulate stringsD) To read from and write to the standard input/output streams|D|10
+40|What is the purpose of the break statement in a switch structure?A) To exit the loopB) To skip the current iterationC) To jump to the next caseD) To exit the switch structure|D|10
+41|In C++, what does the following statement achieve: list[5] = list[3] + list[6];?A) It initializes the array list with valuesB) It calculates the sum of elements at indices 3 and 6C) It assigns the value of index 3 to index 5D) It assigns the value of index 6 to index 5|B|10
+42|Which loop is best suited for situations where the number of repetitions is known in advance?A) while loopB) for loopC) do...while loopD) if-else loop|B|10
+43|What is the primary difference between a while loop and a do...while loop in C++?A) The while loop always executes at least onceB) The do...while loop does not have a loop conditionC) The while loop has an exit condition at the endD) The do...while loop does not support nested loops|A|10
+44|What is the general form of a for loop in C++?A) for (initialization; condition; update)B) for (condition; update; initialization)C) for (update; condition; initialization)D) for (condition; initialization; update)|A|10
+45|What is the syntax for declaring a one-dimensional array in C++?A) int num[5];B) int[num];C) int num();D) int[] num;|A|10
+46|What is the significance of the index in an array?A) It specifies the data type of the arrayB) It determines the size of the arrayC) It specifies the position of a component in the arrayD) It initializes the array|C|10
+47|How are arrays initialized during declaration in C++?A) By specifying the array size and values within bracesB) By providing only the array sizeC) By using the new keywordD) By declaring the data type of the array|A|10
+48|Which of the following statements is illegal in C++ when working with arrays?A) int list[10] = {0};B) int list[10] = {8, 5, 12};C) int list[];D) int list[10];|C|10
+49|What is the purpose of a two-dimensional array?A) To store data of different data typesB) To store data in a single dimensionC) To arrange data in two dimensionsD) To perform aggregate operations|C|10
+50|How are two-dimensional arrays declared in C++?A) int[rows][columns] arr;B) int arr[rows][columns];C) int arr[][];D) int arr[];|B|10
+51|How can two-dimensional arrays be initialized in C++?A) By specifying the number of rows and columns within bracesB) By providing values for each element of the arrayC) By using the new keywordD) By declaring the data type of the array|B|10
+52|What is the purpose of reference parameters in C++ functions?A) To make a copy of the actual parameterB) To access the memory address of the actual parameterC) To avoid passing parameters by valueD) To declare the data type of the parameter|B|10
+53|When are reference parameters useful in C++ functions?A) When you want to change the actual parameterB) When you want to declare multiple parametersC) When you want to return multiple values from a functionD) When you want to avoid passing parameters by reference|A|10
+54|How are arrays passed to functions in C++?A) By valueB) By referenceC) By pointerD) By name|B|10
+55|What is the role of the '&' symbol in C++ reference parameters?A) It specifies the data type of the parameterB) It indicates that the parameter is passed by valueC) It accesses the memory address of the actual parameterD) It defines the size of the parameter|C|10
+56|In C++, what happens when you manipulate a value parameter within a function?A) The actual parameter changesB) The function returns the manipulated valueC) The function terminatesD) The actual parameter remains unchanged|D|10
+57|Which type of parameter is useful when you want to change the actual parameter in a function?A) Value parameterB) Reference parameterC) Pointer parameterD) Constant parameter|B|10
+58|Why are arrays passed by reference in C++ functions?A) To save memory spaceB) To make a copy of the arrayC) To avoid passing parameters by valueD) To increase execution time|A|10
+59|What happens if the size of an array is provided as a formal parameter in a C++ function?A) It determines the size of the arrayB) It is used to initialize the arrayC) It is ignored by the compilerD) It may lead to a compile-time error|C|10
+60|What is the primary difference between a class and a structure in C++?A) Classes are secure and can hide implementation details, while structures cannotB) Structures are private by default, while classes are public by defaultC) Classes represent objects with methods and encapsulation, while structures are used for grouping data membersD) Structures can have constructors and destructors, while classes cannot|C|10
+61|What is the purpose of a constructor in C++ classes?A) To delete objects properlyB) To initialize objects upon creationC) To free dynamic memoryD) To perform program housekeeping|B|10
+62|How is a destructor defined in a C++ class?A) By using the keyword 'destroy' followed by the class nameB) By using the class name followed by a colonC) By using the character '~' followed by the class nameD) By using the keyword 'delete' followed by the class name|C|10
+63|What happens if a class does not define its own destructor in C++?A) The compiler generates a default destructorB) The class cannot be instantiatedC) The destructor must be explicitly called in the main functionD) It results in a compilation error|A|10
+64|How is an object's constructor automatically called in C++?A) By using the 'new' keywordB) By invoking the destructorC) When the object goes out of scopeD) Upon the object's creation|D|10
+65|What does the 'this' pointer refer to in C++ classes?A) It refers to the base classB) It refers to the derived classC) It refers to the current objectD) It refers to the static members of the class|C|10
+66|When is a class destructor automatically executed in C++?A) When the class object is createdB) When the class object goes out of scopeC) When the class is declaredD) When the class inherits from another class|B|10
+67|What is the purpose of overloading a constructor in C++?A) To create multiple instances of the same classB) To allow dynamic memory allocationC) To initialize objects with different parametersD) To delete objects properly|C|10
+68|How are objects created using a constructor in C++?A) By calling the constructor explicitlyB) By using the 'delete' keywordC) By invoking the class name followed by parenthesesD) By using the 'new' keyword|C|10
+69|What is the significance of static member variables in C++ classes?A) They exist only when an object of the class is createdB) They are accessible using the 'this' pointerC) They are shared among all objects of the classD) They are initialized by the destructor|C|10
+70|What is the syntax for accessing a static member variable of a class in C++?A) class_name::variable_nameB) class_name.variable_nameC) class_name->variable_nameD) variable_name::class_name|A|10
+71|When are reference parameters useful in C++ functions?A) When you want to change the actual parameterB) When you want to declare multiple parametersC) When you want to return multiple values from a functionD) When you want to avoid passing parameters by reference|A|10
+72|What is the purpose of passing an object by reference in C++?A) To save memory spaceB) To make a copy of the objectC) To avoid passing parameters by valueD) To increase execution time|C|10
+73|How are arrays of class objects created in C++?A) By using the 'new' keywordB) By specifying the array size and values within bracesC) By invoking the class constructor with subscript notationD) By declaring an array of class pointers|B|10
+74|What is the role of the '&' symbol in C++ reference parameters?A) It specifies the data type of the parameterB) It indicates that the parameter is passed by valueC) It accesses the memory address of the actual parameterD) It defines the size of the parameter|C|10
+75|What is the purpose of a structure in C++?A) To model objects with methods and encapsulationB) To represent records and group heterogeneous data membersC) To create secure data typesD) To define constructors and destructors|B|10
+76|What happens when an object is assigned to another object in C++?A) The objects become independent copies of each otherB) The objects share the same memory spaceC) The object's destructor is calledD) The object's constructor is called|B|10
+77|How is a structure different from a class in C++?A) Structures are not secure, while classes are secureB) Structures have private members by default, while classes have public membersC) Structures can have constructors and destructors, while classes cannotD) Structures are used for grouping data members, while classes represent objects with methods and encapsulation|D|10
+78|What is the default access level for members of a class in C++?A) PublicB) ProtectedC) PrivateD) Static|C|10
+79|What is the purpose of the scope resolution operator (::) in C++?A) To access static member variablesB) To access member functions outside the class definitionC) To specify the data type of a variableD) To define the size of an array|B|10
+80|What does a pointer store in C++?A) Memory addressB) Variable valueC) Data typeD) Function reference|A|10
+81|What is the purpose of the asterisk (*) in C++ pointer declarations?A) Multiply valuesB) IndirectionC) Define data typeD) Declare pointers|B|10
+82|How are pointer variables initialized in C++?A) Using nullptrB) AutomaticallyC) Must be explicitly initializedD) Using new keyword|C|10
+83|Which operator is used to obtain the memory address of a variable in C++?A) &B) *C) ->D) ::|A|10
+84|What is the role of the dereferencing operator (*) in C++?A) Accessing memory addressB) Defining data typesC) Indirectly accessing value at an addressD) Declaring pointers|C|10
+85|What happens when you pass a pointer to a function in C++?A) Value is copiedB) Memory address is copiedC) Function is executedD) Variable is destroyed|B|10
+86|How can you access the value pointed to by a pointer in C++?A) Using the dot operatorB) Using the arrow operatorC) Using the asterisk operatorD) Using the ampersand operator|C|10
+87|What is the purpose of the arrow operator (->) in C++?A) Accessing memory addressB) Defining data typesC) Indirectly accessing members of a class or struct via a pointerD) Declaring pointers|C|10
+88|What is the difference between static and dynamic memory allocation in C++?A) Static allocation occurs at runtime, while dynamic allocation occurs at compile timeB) Static allocation is managed by the programmer, while dynamic allocation is automaticC) Static allocation involves fixed-size memory, while dynamic allocation allows variable-size memoryD) Static allocation is slower than dynamic allocation|C|10
+89|How do you deallocate dynamic memory in C++?A) Using the delete keywordB) AutomaticallyC) Using nullptrD) By setting variables to NULL|A|10
+90|What is a dangling pointer in C++?A) A pointer that points to a valid memory addressB) A pointer that points to a memory address that has been deallocatedC) A pointer that is uninitializedD) A pointer that is declared but never used|B|10
+91|How do you prevent memory leaks in C++?A) By avoiding the use of pointersB) By using only static memory allocationC) By explicitly deallocating dynamic memory when no longer neededD) By increasing the stack size|C|10
+92|What is the default value of a pointer in C++ if it is not initialized?A) 0B) nullptrC) UndefinedD) Depends on the compiler|C|10
+93|What is the significance of setting a pointer to nullptr after deallocating memory?A) Prevents memory leaksB) Releases the memory immediatelyC) Invalidates the pointerD) Ensures the pointer points to a valid memory address|A|10
+94|What is the purpose of the new keyword in C++?A) Allocates memory for dynamic variablesB) Defines new data typesC) Initializes static variablesD) Reserves memory for arrays|A|10
+95|What is the role of the delete keyword in C++?A) Allocates memoryB) Deallocates memoryC) Copies memoryD) Initializes memory|B|10
+96|Which segment of the address space in a program holds dynamic variables?A) Code segmentB) Data segmentC) StackD) Heap|D|10
+97|What does the expression (*ptr).value() in C++ represent?A) Dereferencing a pointerB) Accessing a member function via a pointerC) Accessing a data member via a pointerD) Initializing a pointer|B|10
+98|What does the expression ptr->value() in C++ represent?A) Dereferencing a pointerB) Accessing a member function via a pointerC) Accessing a data member via a pointerD) Initializing a pointer|C|10
+99|How does C++ ensure type safety when using pointers?A) By restricting pointer arithmeticB) By automatically initializing pointersC) By disallowing pointers altogetherD) By enforcing strict naming conventions|A|10
+100|What is the significance of the ampersand (&) operator in C++?A) Returns the memory address of a variableB) Indicates a reference variableC) Denotes the size of a variableD) Represents the bitwise AND operation|A|10
+101|What is the purpose of linked lists?A) To store data in contiguous memory blocksB) To organize and process data in memoryC) To provide fast random access to elementsD) To eliminate the need for pointers|B|15
+102|What is a key advantage of array lists over linked lists?A) Fixed array sizeB) Slow insertion operationsC) Fast random accessD) Limited memory usage|C|15
+103|Which data structure allows for fast random access to any element?A) Linked listB) Array listC) StackD) Queue|B|15
+104|What component does every node in a linked list (except the last) contain?A) DataB) Pointer to the previous nodeC) Link to the next nodeD) Head pointer|C|15
+105|What does the NULL link field in the last node of a linked list indicate?A) The end of the listB) A circular referenceC) The presence of a loopD) An empty list|A|15
+106|Which pointer allows access to the elements of a linked list?A) Current pointerB) Head pointerC) Last pointerD) Node pointer|B|15
+107|How can the number of elements in a linked list be determined?A) By accessing the head nodeB) By counting the number of NULL linksC) By traversing the entire listD) By using an index variable|C|15
+108|What does a head variable in a linked list store?A) Address of the last nodeB) Address of the previous nodeC) Address of the first nodeD) Address of the current node|C|15
+109|Why is it necessary to create a new node in the heap when inserting into a linked list?A) To conserve memoryB) To avoid memory leaksC) To simplify the codeD) To speed up insertion|B|15
+110|What happens if a new node is created in the stack during insertion?A) Memory leak occursB) Stack overflow errorC) Dangling pointer issueD) Memory fragmentation|C|15
+111|What is the primary purpose of the destructor in a linked list class?A) To create new nodesB) To prevent memory leaksC) To access list elementsD) To manage stack memory|B|15
+112|Which operation is used to calculate the size of a linked list?A) getSize()B) insert()C) clear()D) traverse()|A|15
+113|Which method is used to clear a linked list?A) delete()B) clear()C) remove()D) empty()|B|15
+114|How can the size of a linked list be updated during insertion?A) By subtracting from the current sizeB) By adding to the current sizeC) By multiplying the current sizeD) By dividing the current size|B|15
+115|What does the size field in a linked list data structure represent?A) Number of nodes in the listB) Total memory allocatedC) Size of each nodeD) Index of the last node|A|15
+116|What happens if a linked list is not properly cleared?A) Memory leak occursB) Stack overflow errorC) Dangling pointer issueD) Index out of bounds error|A|15
+117|Which operation is used to access list elements by index?A) getSize()B) insert()C) get()D) traverse()|C|15
+118|What is the primary advantage of using a linked list over an array list?A) Fast random accessB) Fixed array sizeC) Flexible sizeD) Sequential access|C|15
+119|What operation is necessary to determine if an item is in the list?A) getSize()B) insert()C) search()D) delete()|C|15
+120|Which component of a linked list node stores relevant information?A) LinkB) PointerC) DataD) Index|C|15
+121|What operation determines the existence of an item in a linked list?A) AddB) SearchC) RemoveD) Sort|B|15
+122|What is the key field parameter in a linked list search function?A) IndexB) ValueC) SizeD) Length|B|15
+123|What is the time complexity for accessing an element at a given index in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C|15
+124|What method is used to get the element's info at a given index?A) getItemAtB) getItemInfoC) accessItemD) getElement|A|15
+125|How is the first element deleted in a linked list?A) deleteStartB) removeFirstC) deleteFirstD) removeStart|C|15
+126|How is the last element deleted in a linked list?A) deleteEndB) removeLastC) deleteLastD) removeEnd|A|15
+127|What method is used to delete an item at an arbitrary index in a linked list?A) deleteItemAtB) removeItemC) deleteItemD) removeItemAt|D|15
+128|What is the time complexity for deleting an item at an arbitrary index in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C|15
+129|What is the primary purpose of the link field in a linked list node?A) Store dataB) Identify nodeC) Point to the next nodeD) Store index|C|15
+130|What happens if an attempt is made to access an element at an index beyond the bounds of the linked list?A) Index out of range errorB) Null pointer exceptionC) Memory leakD) Index out of bound|A|15
+131|When traversing a linked list,what is compared with the desired value to search for an item?A) IndexB) PointerC) InfoD) Size|C|15
+132|What type of error may occur if a new node is created in the stack during insertion?A) Memory leakB) Stack overflow errorC) Dangling pointer issueD) Memory fragmentation|C|15
+133|What is the time complexity for deleting the last item in a linked list?A) O(1)B) O(log n)C) O(n)D) O(n^2)|C|15
+134|Linked lists can be used to implement a queue data structure efficiently.A) TrueB) False|A|15
+135|What modification is required in the constructor of a linked list to accommodate efficient insertion at the end?A) Initializing size to 1B) Setting head to NULLC) Initializing tail to NULLD) Allocating memory for a new node|C|15
+136|In a linked list,which operation's efficiency is not improved by using a tail pointer?A) Inserting at the beginningB) Deleting from the beginningC) Inserting at the endD) Deleting from the end|A|15
+137|Which method allows reversed traversal of a linked list using recursion?A) printReverse()B) traverseBackward()C) reverseTraversal()D) backwardPrint()|A|15
+138|Which approach is more efficient for reversed traversal of a linked list?A) Using a nested loopB) Using recursionC) Using a doubly linked listD) Using an array|B|15
+139|What is the main advantage of using doubly linked lists?A) Efficient insertion at the beginningB) Efficient traversal in both directionsC) Reduced memory consumptionD) Simplified implementation of insertions|B|15
+140|What application can benefit from the use of doubly linked lists?A) Implementing a stackB) Implementing a queueC) Implementing back and forward buttons in a web browserD) Implementing a binary search tree|C|15
+141|How can doubly linked lists improve traversal to reach an item at a given index?A) By starting from the middleB) By starting from the endC) By starting from both ends simultaneouslyD) By using a recursive approach|C|15
+142|Which data structure is suitable for implementing back and forward buttons in a web browser?A) Singly linked listB) Doubly linked listC) Circular linked listD) Array|B|15
+143|What characteristic distinguishes a circular linked list from a normal linked list?A) It stores NULL at the end nodeB) It has a limited number of elementsC) Its last node points to the first nodeD) It allows bidirectional traversal|C|15
+144|What operation must be handled differently in a circular linked list compared to a normal linked list?A) Insertion at the beginningB) Deletion from the beginningC) Insertion at the endD) Deletion from the end|A|15
+145|Which operation's efficiency does not improve significantly in a circular linked list compared to a normal linked list?A) TraversalB) Insertion at the beginningC) Insertion at the endD) Deletion from the end|A|15
+146|What modification is necessary in a circular linked list's insertion at the beginning compared to a normal linked list?A) Initializing head to NULLB) Allocating memory for a new nodeC) Setting the tail pointer to the new nodeD) Making the last node point to the new node|D|15
+147|What operation is performed differently in a circular doubly linked list compared to a circular linked list?A) TraversalB) Insertion at the beginningC) Deletion from the beginningD) Insertion at the end|B|15
+148|Which factor is critical in determining whether to use an array or a linked list?A) Time complexity of operationsB) Length of the codeC) Availability of memoryD) Ease of implementation|A|15
+149|When is a linked list preferred over an array?A) When dynamic addition and expansion are requiredB) When lots of random access is necessaryC) When searching and items are unsortedD) When memory consumption is a concern|A|15
+150|What operation is efficient in a circular doubly linked list compared to a circular linked list?A) Traversal from beginning to endB) Traversal from end to beginningC) Insertion at the beginningD) Insertion at the end|C|15
+151|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?A) Insertion at the beginningB) Insertion at the endC) Deletion from the beginningD) Deletion from the end|D|15
+152|What is a significant advantage of circular doubly linked lists?A) Efficient memory utilizationB) Ability to store a large number of elementsC) Natural implementation of round-robin schedulingD) Bidirectional traversal efficiency|D|15
+153|What operation is performed differently in a circular doubly linked list compared to a circular linked list?A) TraversalB) Insertion at the beginningC) Deletion from the beginningD) Insertion at the end|B|15
+154|Which factor is critical in determining whether to use an array or a linked list?A) Time complexity of operationsB) Length of the codeC) Availability of memoryD) Ease of implementation|A|15
+155|When is a linked list preferred over an array?A) When dynamic addition and expansion are requiredB) When lots of random access is necessaryC) When searching and items are unsortedD) When memory consumption is a concern|A|15
+156|What operation is efficient in a circular doubly linked list compared to a circular linked list?A) Traversal from beginning to endB) Traversal from end to beginningC) Insertion at the beginningD) Insertion at the end|C|15
+157|Which operation requires modifications in both insertion and deletion methods when implementing a circular doubly linked list?A) Insertion at the beginningB) Insertion at the endC) Deletion from the beginningD) Deletion from the end|D|15
+158|What is a significant advantage of circular doubly linked lists?A) Efficient memory utilizationB) Ability to store a large number of elementsC) Natural implementation of round-robin schedulingD) Bidirectional traversal efficiency|D|15
+159|What application can benefit from the use of doubly linked lists?A) Implementing a stackB) Implementing a queueC) Implementing back and forward buttons in a web browserD) Implementing a binary search tree|C|15
+160|How can doubly linked lists improve traversal to reach an item at a given index?A) By starting from the middleB) By starting from the endC) By starting from both ends simultaneouslyD) By using a recursive approach|C|15
+161|What operation in a stack adds an element onto the stack?A) topB) pushC) popD) isEmpty|B|15
+162|In the context of stack operations, what does the top operation do?A) Removes the top element from the stackB) Adds an element onto the stackC) Peeks at the top element of the stack without removing itD) Checks if the stack is empty|C|15
+163|Which application utilizes the stack concept for parentheses matching?A) Sorting algorithmsB) Parentheses balancingC) Searching algorithmsD) String manipulation|B|15
+164|What is the expected behavior of the isEmpty operation in a stack?A) It returns true if the stack is fullB) It returns true if the stack is not emptyC) It returns true if the stack is emptyD) It returns true if the stack is balanced|C|15
+165|What algorithm is used for parentheses matching?A) Depth-first searchB) Breadth-first searchC) Greedy algorithmD) Stack-based algorithm|D|15
+166|How is the stack data structure represented using arrays?A) Elements are stored in a linked listB) Elements are stored in a circular bufferC) Elements are stored in a two-dimensional arrayD) Elements are stored in a one-dimensional array|D|15
+167|Which operation checks if the stack is empty?A) isEmptyB) pushC) popD) top|A|15
+168|What is the purpose of the pop operation in a stack?A) To add an element onto the stackB) To peek at the top element of the stackC) To remove the top element from the stackD) To check if the stack is empty|C|15
+169|In which application is the infix to postfix evaluation method used?A) Database managementB) Compiler designC) Graphics renderingD) Network routing|B|15
+170|How is the stack data structure represented using linked nodes?A) Elements are stored in an arrayB) Elements are stored in a tree structureC) Elements are stored in linked nodesD) Elements are stored in a hash table|C|15
+171|What is the purpose of the infix to postfix evaluation method?A) To convert arithmetic expressions from postfix to infix notationB) To convert arithmetic expressions from infix to postfix notationC) To evaluate arithmetic expressions in postfix notationD) To evaluate arithmetic expressions in infix notation|B|15
+172|Which operation is used to add an element onto the stack?A) topB) pushC) popD) isEmpty|B|15
+173|What is the key characteristic of a stack data structure?A) First In First Out (FIFO)B) Last In First Out (LIFO)C) Random accessD) Bidirectional access|B|15
+174|Which operation removes the top element from the stack?A) topB) pushC) popD) isEmpty|C|15
+175|In postfix evaluation, what is done when an operand is encountered?A) It is outputted immediatelyB) It is pushed onto the stackC) It is popped from the stackD) It is added to the top of the stack|B|15
+176|What does the acronym LIFO stand for in the context of stacks?A) Last In First OutB) Lost In First OutC) Last In Fifth OutD) Last Into First Out|A|15
+177|Which of the following is NOT a standard operation of a stack?A) pushB) addC) popD) top|B|15
+178|Which data structure is used to implement a stack using a linked list?A) ArrayB) QueueC) TreeD) Graph|C|15
+179|What happens when a right parenthesis is encountered in parentheses matching and the stack is empty?A) The right parenthesis is added to the stackB) An error is raisedC) The right parenthesis is ignoredD) The algorithm terminates|B|15
+180|In the infix to postfix evaluation algorithm, what is done when a closing parenthesis is encountered?A) All operators in the stack are popped until an opening parenthesis is encounteredB) All operands in the stack are popped until a closing parenthesis is encounteredC) The closing parenthesis is pushed onto the stackD) The algorithm terminates|A|15
+181|What is a queue in data structures?A) A list of homogeneous elementsB) A list of heterogeneous elementsC) A list of elements added at the frontD) A list of elements deleted from the front|A|15
+182|What is the characteristic feature of a FIFO data structure?A) Elements are added at the backB) Elements are added at the frontC) Elements are deleted from the backD) Elements are deleted from the front|D|15
+183|In a queue, how are elements added and deleted?A) Added at the front, deleted from the backB) Added at the back, deleted from the frontC) Added at the front, deleted from the frontD) Added at the back, deleted from the back|B|15
+184|What is a common real-life example of a queue?A) A stack of booksB) A group of people waiting in lineC) A random collection of itemsD) A pool of resources|B|15
+185|What is a priority queue?A) A queue where elements are added based on priorityB) A queue with fixed sizeC) A queue where elements are added randomlyD) A queue where elements are added alphabetically|A|15
+186|What are the standard operations in a queue?A) addQueue, removeQueue, isEmptyB) addQueue, deleteQueue, isFullC) addQueue, deleteQueue, isEmptyD) addQueue, deleteFront, deleteRear|C|15
+187|How is a queue implemented using arrays?A) Elements are added using a rear indexB) Elements are added using a front indexC) Elements are removed using a rear indexD) Elements are removed using a front index|A|15
+188|What issue arises with a fixed-size array implementation of a queue?A) Memory leaksB) Dangling pointersC) Queue overflowD) Circular array handling|C|15
+189|How is a queue implemented using linked lists?A) Elements are added at the beginningB) Elements are added at the endC) Elements are removed from the beginningD) Elements are removed from the end|B|15
+190|What are the four data members of a queue implemented using arrays?A) Array, front index, rear index, maximum sizeB) Array, front index, rear index, countC) Linked nodes, front pointer, rear pointer, countD) Array, head pointer, tail pointer, size|B|15
+191|How is a new element added to the end of a queue implemented using arrays?A) Advance front indexB) Advance rear indexC) Add element at front indexD) Add element at rear index|B|15
+192|How is the size of a queue determined in the linked list implementation?A) By the number of elementsB) By the maximum capacityC) By the front pointerD) By the rear pointer|A|15
+193|What does the deleteQueue operation in a queue return?A) The first elementB) The last elementC) The middle elementD) The highest priority element|A|15
+194|In the linked list implementation, what is stored in the queueRear pointer?A) Address of the first nodeB) Address of the last nodeC) Number of elementsD) Address of the next node|B|15
+195|How is the count variable used to determine if a queue is empty?A) Incremented when an element is addedB) Decremented when an element is addedC) Incremented when an element is removedD) Decremented when an element is removed|C|15
+196|What is the purpose of the lastOpAddQ boolean variable in queue implementation?A) To track the last operation performedB) To determine the queue sizeC) To check if the queue is fullD) To indicate if an element was recently added|D|15
+197|What is the role of the count variable in queue implementation?A) To store the maximum capacityB) To track the last operation performedC) To indicate the number of elementsD) To determine if the queue is full|C|15
+198|How is memory deallocated to avoid dangling pointers in queue implementation?A) Using deleteFront operationB) Using deleteRear operationC) Using the delete operatorD) Using the new operator|C|15
+199|Which operator creates dynamic variables in queue implementation?A) deleteB) deleteFrontC) newD) newFront|C|15
+200|In the provided code snippet, what is the purpose of the system("pause") statement?A) To pause the program executionB) To clear the screenC) To wait for user inputD) To display a message|C|15
+201|What type of data structure is suitable for hierarchically organized data items?A) Linked listsB)TreesC)StacksD)Queues|B|20
+202|What is the top-level node in a tree called?A) ParentB) LeafC) RootD) Child|C|20
+203|What do you call nodes at the same level in a tree?A) DescendantsB) ParentsC) SiblingsD) Leaves|C|20
+204|What is the maximum degree of all nodes in a tree?A) Tree degreeB) Node degreeC) Leaf degreeD) Branching degree|A|20
+205|What is the number of children a node can have?A) Node degreeB) Tree degreeC) Leaf degreeD) Parent degree|A|20
+206|The height of a tree is the number of nodes in it. Answer True or False?A) TrueB) False|B|20
+207|What term is used to describe nodes in a tree data structure that have no children?A) LeavesB) RootsC) BranchesD) Stems|A|20
+208|In a tree data structure, all nodes except the root have exactly one parent. Answer True or False?A) TrueB) False|A|20
+209|File directories in computer science are represented using tree structures. Answer True or False?A) TrueB) False|A|20
+210|In a binary tree, what is the maximum number of children a node can have?A) OneB) TwoC) ThreeD) Four|B|20
+211|How many nodes does a full binary tree of height (h) have?A) 2hB) 2h−1C) h2D) h|A|20
+212|A binary tree with n nodes has a height of at least log2(n+1). Answer True or False?A) TrueB) False|A|20
+213|What are the two sets of nodes in a binary tree called?A) Left and right nodesB) Left subtree and right subtreeC) Left and right childrenD) Left and right branches|B|20
+214|In array representation, each element is stored at an array position corresponding to its assigned number. Answer True or False?A) TrueB) False|A|20
+215|How does linked representation of a binary tree connect parent and child nodes?A) ArraysB) Linked listsC) StacksD) Queues|B|20
+216|Common binary tree operations include determining height, counting nodes and leaves, and traversing the tree. Answer True or False?A) TrueB) False|A|20
+217|How long should the array be for a complete binary tree with n nodes?A) n2B) n+1C) 2nD) n+1|D|20
+218|How long should the array be for a right-skewed binary tree with n nodes?A) nB) 2nC) n+1D) 2^n|D|20
+219|What are the four different traversal methods are commonly used for binary trees?A) Pre-order, In-order, Post-order, Level-orderB) Depth-first, Breadth-first, Pre-order, Post-orderC) In-order, Level-order, Breadth-first, Depth-firstD) Depth-first, In-order, Post-order, Level-order|A|20
+220|During which traversal method is the root node visited last?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|C|20
+221|Which traversal method visits the nodes from left to right at each level of the tree before moving to the next level?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|D|20
+222|What traversal method involves traversing the left subtree, visiting the node, and then traversing the right subtree?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|B|20
+223|In which traversal method is the sequence of actions "visit the node, traverse the left subtree, traverse the right subtree"?A) Pre-order traversalB) In-order traversalC) Post-order traversalD) Level-order traversal|A|20
+224|What structure is introduced to efficiently perform operations such as searching, insertion, and deletion in a binary tree?A) AVL TreeB) B-treeC) Binary Search TreeD) Heap|C|20
+225|A node is reached from the root by what?A) BranchB) PathC) RouteD) Trail|B|20
+226|What is the maximum number of nodes we can get from a binary tree when the height of the tree is 5?A) 15B) 31C) 63D) 127|B|20
+227|Determine the minimum number of nodes we can get from a binary tree when the height of the tree is 3.A) 2B) 3C) 4D) 5|B|20
+228|Determine the minimum height we can get from a binary tree when the number of nodes is 23.A) 4B) 5C) 6D) 7|B|20
+229|Determine the maximum height we can get from a binary tree when the number of nodes is 7.A) 3B) 4C) 5D) 6|A|20
+230|In a Binary Search Tree (BST), what property ensures that the left subtree of any node contains only nodes with keys less than the node's key?A) Every vertex is connected to every other vertexB) The left subtree contains only nodes with keys greater than the node's keyC) The right subtree contains only nodes with keys greater than the node's keyD) There must be no duplicate keys among the nodes|A|20
+231|How does the insertion process work in a Binary Search Tree (BST)?A) New nodes are always inserted as the root of the treeB) New nodes are inserted randomly within the treeC) New nodes are inserted as leaves at the end of a search pathD) New nodes are inserted based on their key value without any specific order|C|20
+232|Which method is used to find a specific node in a Binary Search Tree (BST)?A) Breadth-first searchB) Depth-first searchC) Linear searchD) Binary search|D|20
+233|What defines the maximum-key node in a Binary Search Tree (BST)?A) The rightmost node in the treeB) The leftmost node in the treeC) The root node of the treeD) The node with the highest key value|A|20
+234|What defines the minimum-key node in a Binary Search Tree (BST)?A) The rightmost node in the treeB) The leftmost node in the treeC) The root node of the treeD) The node with the lowest key value|B|20
+235|What must be ensured during the deletion process in a Binary Search Tree (BST) to maintain its structure?A) The node to be deleted must be a leaf nodeB) The node to be deleted must have a left subtreeC) The node to be deleted must have a right subtreeD) The resulting tree after deletion must remain a binary search tree|D|20
+236|Which special type of binary trees maintains the properties of BSTs?A) AVL TreesB) Red-Black TreesC) B-treesD) Trie Trees|A|20
+237|When inserting nodes into a Binary Search Tree (BST), what determines the shape of the resulting tree?A) The value of the nodes being insertedB) The height of the treeC) The order of insertion operationsD) The number of nodes in the tree|C|20
+238|What is the worst-case time complexity for finding a node in a Binary Search Tree (BST) with n elements?A) O(1)B) O(log n)C) O(n)D) O(n^2) |B|20
+239|Which operation is used to find the node with a specific key value in a Binary Search Tree (BST)?A) insert()B) delete()C) search()D) max()|C|20
+240|What is the primary purpose of AVL Trees?A) To maintain a balanced binary search treeB) To perform fast search operationsC) To store key-value pairs efficientlyD) To implement dynamic arrays|A|20
+241|In a complete binary search tree, what is the maximum number of nodes in the last level?A) 2^(h-1)B) 2^(h-1) - 1C) 2^h - 1D) 2^h|A|20
+242|Which of the following cases represents a situation where a node in a Binary Search Tree (BST) has both left and right subtrees?A) Case 1: The node to be deleted is a leafB) Case 2: The node to be deleted has no left subtreeC) Case 3: The node to be deleted has no right subtreeD) Case 4: The node to be deleted has nonempty left and right subtrees|D|20
+243|How does the delete() operation handle the case where the node to be deleted is a leaf node?A) It replaces the node with its right childB) It replaces the node with its left childC) It removes the node from the treeD) It updates the root of the tree|C|20
+244|What is the primary advantage of using AVL Trees in comparison to regular Binary Search Trees?A) AVL Trees require less memory spaceB) AVL Trees ensure faster search operationsC) AVL Trees maintain a balanced structureD) AVL Trees support duplicate keys|C|20
+245|Which algorithm is used to re-balance an AVL Tree after insertion or deletion operations?A) Depth-first searchB) Breadth-first searchC) RotationD) Insertion sort|C|20
+246|How does the insertion process affect the shape of a Binary Search Tree (BST)?A) It always produces a balanced treeB) It can result in different tree shapes based on the insertion orderC) It creates a complete binary treeD) It maintains a constant height for the tree|B|20
+247|In a Binary Search Tree (BST), what is the primary purpose of the search() operation?A) To insert a new node into the treeB) To find the maximum-key node in the treeC) To search for a specific node with a given keyD) To delete a node from the tree|C|20
+248|Which of the following is true regarding AVL Trees?A) They are unbalanced binary search treesB) They always have a height of 2C) They maintain a balanced structure using rotationsD) They allow duplicate keys in the tree|C|20
+249|What is the time complexity of the max() operation in a Binary Search Tree (BST)?A) O(1)B) O(log n)C) O(n)D) O(n^2) |B|20
+250|How does the delete() operation handle the case where the node to be deleted has nonempty left and right subtrees?A) It replaces the node with its left childB) It replaces the node with its right childC) It replaces the node with the maximum node from its left subtreeD) It removes the node and re-balances the tree using rotations|C|20
+251|Which data structure is composed of vertices (nodes) and edges (links/arcs)?A) TreeB) GraphC) Linked ListD) Stack|B|20
+252|What component of a graph describes relationships among the objects represented by vertices?A) VertexB) EdgeC) RootD) Leaf|B|20
+253|Graphs are solely used in the analysis of electrical circuits and network communications, finding shortest route between two places and many more. Answer True or False?A) TrueB) False|A|20
+254|Graphs are useful for representing linear relationships between objects/entities. Answer True or False?A) TrueB) False|A|20
+255|What typically represents a point or entity in a graph?A) EdgeB) VertexC) LinkD) Arc|B|20
+256|What does "x ∈ A∪B" signify in set theory?A) Intersection of sets A and BB) Subset of set A by set BC) Union of sets A and BD) Cartesian product of sets A and B|C|20
+257|What does x∈A∪B signify in set theory?A) IntersectionB) UnionC) SubsetD) Superset|B|20
+258|What distinguishes a directed graph from an undirected graph?A) Arrows on edgesB) More verticesC) CyclesD) More edges|A|20
+259|What is a simple path in a graph?A) No verticesB) One vertexC) No repeated verticesD) Repeated vertices|C|20
+260|What does it mean for two vertices uu and vv to be adjacent in a graph?A) Connected by an edgeB) Same degreeC) Connected by a pathD) Not connected|A|20
+261|What is the degree of a node in a graph?A) Adjacent verticesB) Incident edgesC) CyclesD) Connected components|B|20
+262|What does x∈A∩B signify in set theory?A) UnionB) IntersectionC) SubsetD) Superset|B|20
+263|What defines the Cartesian product A×B of sets A and B?A) Set of all ordered pairs where the first element is from A and the second from BB) Set of all unordered pairs where the elements can be from A or BC) Set of all elements that belong to either A or BD) Set of all subsets of A and B|A|20
+264|What is the primary characteristic of a directed graph?A) Bidirectional edgesB) Unidirectional edgesC) Complete connectivityD) Acyclic structure|B|20
+265|What is a cycle in a graph?A) A path with no repeated verticesB) A path with repeated verticesC) A subgraph that forms a loopD) A subgraph without any edges|C|20
+266|What defines a complete graph?A) Every vertex is connected to every other vertexB) Every vertex has the same degreeC) There are no cycles in the graphD) The graph has no isolated vertices|A|20
+267|What is the main advantage of using an adjacency matrix for graphs?A) It saves memory spaceB) It is efficient for sparse graphsC) It facilitates edge weight storageD) It enables fast edge existence determination|D|20
+268|What type of graphs are adjacency lists particularly suitable for?A) Dense graphsB) Weighted graphsC) Sparse graphsD) Directed graphs|C|20
+269|Which data structure is typically used to store adjacent vertices in adjacency lists?A) ArraysB) Linked listsC) StacksD) Queues|B|20
+270|What method is used to determine the existence of an edge (i,j) in adjacency lists?A) Iterating through all verticesB) Traversing the entire graphC) Checking specific nodes in the listD) Using a hash table|C|20
+271|What is the size of the adjacency matrix compared to the adjacency list for sparse graphs?A) The adjacency matrix is largerB) The adjacency list is largerC) They are the same sizeD) It depends on the number of vertices|B|20
+272|What does each element of an adjacency matrix represent in a weighted graph?A) Vertex indexB) Edge existenceC) Edge weightD) Vertex connectivity|C|20
+273|In adjacency lists, what information does each node typically contain?A) Vertex indexB) Edge existenceC) Edge weightD) Adjacent vertex and link to another adjacent vertex|D|20
+274|What is the property of an undirected graph's adjacency matrix that ensures symmetry?A) The size of the matrixB) The number of verticesC) The values of A(i,j) and A(j,i)D) The adjacency list size|C|20
+275|What is the typical method used to store graphs in computer memory for processing and manipulation?A) ArraysB) Linked listsC) Both adjacency matrix and adjacency listsD) Stacks|C|20
+276|What are the fundamental operations typically performed on a graph?A) Creating the graphB) Adding or removing edgesC) Determining edge existenceD) All of the above|D|20
+277|What is the primary purpose of traversal in a graph?A) Finding the longest path between two verticesB) Determining whether a graph is cyclicC) Discovering all vertices reachable from a given vertexD) Resolving dependencies among vertices|C|20
+278|In a weighted graph, what defines a minimal spanning tree?A) A tree with the maximum total weightB) A tree with the minimum total weightC) A tree with the maximum number of edgesD) A tree with the minimum number of vertices|B|20
+279|Which algorithm constructs a minimal spanning tree by adding edges incrementally?A) Kruskal's algorithmB) Dijkstra's algorithmC) Bellman-Ford algorithmD) Prim's algorithm|D|20
+280|What is the primary objective of Prim's algorithm?A) To identify the longest path in a graphB) To compute the maximum weight of a treeC) To build a minimal spanning treeD) To perform topological sorting|C|20
+281|What does a topological sort of a directed graph aim to achieve?A) Ensuring a cyclic graphB) Resolving dependencies among tasksC) Minimizing the number of verticesD) Maximizing the number of cycles|B|20
+282|What is the main function of a priority queue in topological sorting?A) Maintaining vertex orderB) Storing distances between verticesC) Selecting vertices with minimum degreesD) Handling visited vertices|C|20
+283|Why is it significant that a graph has a spanning tree if and only if it is connected?A) It ensures the efficiency of the minimal spanning tree algorithmsB) It guarantees the existence of a minimal spanning treeC) It simplifies the traversal processD) It facilitates the identification of disconnected components|B|20
+284|How does Dijkstra's algorithm differ from Bellman-Ford algorithm?A) Dijkstra's works for negative-weight cycles, Bellman-Ford doesn'tB) Dijkstra's finds the shortest path to all nodes from a source, Bellman-Ford doesn'tC) Dijkstra's requires positive weights, Bellman-Ford doesn'tD) Dijkstra's algorithm finds the shortest path between two nodes, Bellman-Ford finds the shortest path between all pairs of nodes|B|20
+285|What is the primary challenge in finding the shortest route that visits each city once and returns to the origin city?A) Identifying the origin cityB) Determining the distances between citiesC) Resolving computational complexityD) Optimizing the route|C|20
+286|What is the primary function of a spanning tree in a graph?A) Maximizing the number of edgesB) Resolving dependency among verticesC) Identifying cyclesD) Connecting all vertices without cycles|D|20
+287|Which algorithm is used to find a minimal spanning tree by selecting edges based on their weights?A) Kruskal's algorithmB) Prim's algorithmC) Dijkstra's algorithmD) Floyd-Warshall algorithm|A|20
+288|What characteristic defines a minimal spanning tree?A) It maximizes the total weight of edgesB) It minimizes the total weight of edgesC) It contains the maximum number of verticesD) It contains the minimum number of edges|B|20
+289|How does topological sorting help in managing tasks in a project?A) By resolving dependencies among tasksB) By minimizing the number of cyclesC) By randomizing task execution orderD) By maximizing the number of edges|A|20
+290|What data structure is commonly used in Prim's algorithm to select edges with minimal weight?A) QueueB) StackC) Priority queueD) Hash table|C|20
+291|What is the primary advantage of using Kruskal's algorithm for finding a minimal spanning tree?A) It guarantees the shortest path between two verticesB) It efficiently handles negative-weight edgesC) It is suitable for cyclic graphsD) It is easy to implement|D|20
+292|What property ensures that a minimal spanning tree contains no cycles?A) It maximizes the total weight of edgesB) It minimizes the total weight of edgesC) It connects all vertices without forming a cycleD) It contains the maximum number of edges|C|20
+293|How do Dijkstra's and Floyd-Warshall's algorithms differ?A) Dijkstra's works for acyclic graphs, while Floyd-Warshall's works for cyclic graphsB) Dijkstra's finds the shortest path between two nodes, while Floyd-Warshall's finds the shortest path between all pairs of nodesC) Dijkstra's requires positive weights, while Floyd-Warshall's works for negative weightsD) Dijkstra's is based on depth-first search, while Floyd-Warshall's is based on breadth-first search|B|20
+294|What is the primary objective of topological sorting in a directed graph?A) To maximize the number of cyclesB) To minimize the number of edgesC) To resolve dependency among verticesD) To determine the existence of cycles|C|20
+295|Which algorithm is used to find the shortest path between a source node and all other nodes in a graph?A) Kruskal's algorithmB) Bellman-Ford algorithmC) Dijkstra's algorithmD) Prim's algorithm|C|20
+296|What is the key characteristic of a topological sort in a directed graph?A) It orders vertices based on their degreeB) It resolves dependencies among verticesC) It maximizes the number of cyclesD) It minimizes the number of edges|B|20
+297|What is the main limitation of using Floyd-Warshall's algorithm for finding the shortest path in a graph?A) It requires positive weightsB) It only works for acyclic graphsC) It has a high computational complexityD) It cannot handle negative cycles|D|20
+298|What is the primary challenge in finding the shortest possible route that visits each city once and returns to the origin city?A) Identifying the origin cityB) Determining the distances between each pair of citiesC) Resolving computational complexityD) Optimizing the route|D|20
+299|What is the role of a priority queue in Prim's algorithm for finding a minimal spanning tree?A) To maintain the order of verticesB) To store the distances between verticesC) To select edges with minimal weightD) To keep track of visited vertices|C|20
+300|What is the significance of the theorem stating that a graph has a spanning tree if and only if it is connected?A) It determines the efficiency of the minimal spanning tree algorithmsB) It ensures the existence of a minimal spanning treeC) It helps in identifying disconnected componentsD) It simplifies the traversal process|B|20

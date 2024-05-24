@@ -6,8 +6,7 @@
 using namespace std; 
 
 int main() {
-
-
+	// string to integer - stoi(str)
 
 	return 0;
 }
