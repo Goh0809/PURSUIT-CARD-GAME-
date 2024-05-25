@@ -11,13 +11,13 @@ class PursuitCardGame {
 	string quizQuestionFilePath = "C:\\Users\\Goh Ee Cheng\\Desktop\\DSTR Assignment\\DSTR Assignment\\G36_TP068202_TP070822_TP070823_quiz_question.csv";
 
 public:
-	UnansweredDeckCircularQueue unansweredDeck;
+
 	// constructor
 	PursuitCardGame() {
 
 	}
 
-	void loadQuizQuestion() {
+	void loadQuizQuestion(UnansweredDeckCircularQueue& unansweredDeck) {
 		// declare the variable that corresponding to the quiz question data
 		string questionNumber;
 		string quizQuestion;
@@ -48,7 +48,9 @@ public:
 			// enqueue the data into the unansweredDeck queue
 			unansweredDeck.enqueue(questionNumber, quizQuestion, answer, score);
 		}
-	}
 
+		// close the file
+		file.close();
+	}
 
 };

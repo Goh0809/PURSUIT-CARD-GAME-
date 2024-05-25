@@ -9,10 +9,10 @@
 using namespace std; 
 
 int main() {
+	UnansweredDeckCircularQueue unansweredDeck;
 	PursuitCardGame cardgame;
-	cardgame.loadQuizQuestion();
-	cardgame.unansweredDeck.randomize();
-	cardgame.unansweredDeck.display();
+	cardgame.loadQuizQuestion(unansweredDeck);
+	unansweredDeck.display();
 
 	return 0;
 }
