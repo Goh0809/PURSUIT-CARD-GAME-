@@ -2,13 +2,12 @@
 
 ## Data Structure and Algorithm Implementation
 Participants
-- Linked List: after the student answer the question, the system should record the data into the system
+- Linked List: after the student answer the question, the system should record the data into the system 
 
 Unanswered desk
-- queue
-- 
-Randomize algorithm
-- Fisher-Yates Shuffle
+- Circular Queue
+- Fisher-Yates Shuffle algorithm for randomize purpose
+
 
 Answered Desk
 - Stack
