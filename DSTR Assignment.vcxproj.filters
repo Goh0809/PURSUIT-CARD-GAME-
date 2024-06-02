@@ -25,7 +25,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="G36_TP068202_TP070822_TP070823_student_linkedlist.hpp">
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp">
@@ -35,6 +35,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Pursuit_Card_Game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_Tree_Top30Winners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

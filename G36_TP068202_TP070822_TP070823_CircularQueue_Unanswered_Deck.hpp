@@ -118,7 +118,6 @@ public:
 		}
 	}
 
-
 private: 
 	void swap(QuizQuestion *a, QuizQuestion* b) {
 		QuizQuestion temp = *a;
