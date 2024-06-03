@@ -15,38 +15,57 @@ class AnsweredDeck {
     Card* stack;
 
 public:
+    // constructor
     AnsweredDeck() {
         top = -1;
         stack = new Card[size];
     }
 
+    // destructur
     ~AnsweredDeck() {
         delete[] stack;
     }
 
+    // determine the stack is empty or not
+    bool isEmpty() {
+        return (top == -1);
+    }
+
+    // determine the stack is full or not
+    bool isFull() {
+        return (top == (size - 1));
+    }
+
+    // push the answered question and its score inside the stack
     void push(string question, int score) {
-        if (top == size - 1) {
-            printf("all question done");
+        if (isFull()) {
+            cout << "You have completed the quiz";
             return;
         }
-        top = top + 1;
+        top += 1;
         stack[top] = { question,score };
     }
 
-    void pop() {
-        if (top == -1) {
-            printf("ans the question");
-            return;
+    // pop the first element in the stack
+    Card pop() {
+        if (isEmpty()) {
+            cout << "Stack underflow";
+            return Card();
         }
-        top = top - 1;
+        Card current = stack[top--];
+        return current;
+    }
+
+    Card peek() {
+        return stack[top];
     }
 
     void display() {
         if (top > 0) {
             for (int i = top; i >= 0; i--) {
                 Card current = stack[i];
-                cout << current.question;
-                cout << current.score;
+                cout << current.question<<endl;
+                cout << current.score<<endl;
             }
         }
         else {

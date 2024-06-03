@@ -32,7 +32,6 @@ public:
 		delete[] unansweredDeck;
 	}
 
-
 	// check if the queue is empty
 	bool isEmpty() {
 		if (front == -1)

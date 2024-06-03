@@ -130,7 +130,8 @@
     <ClCompile Include="G36_TP068202_TP070822_TP070823_quiz_card_game.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="G36_TP068202_TP070822_TP070823_quiz_question.csv" />
+    <None Include="..\..\DSTR\PURSUIT-CARD-GAME-\G36_TP068202_TP070822_TP070823_quiz_question.csv" />
+    <None Include="G36_TP068202_TP070822_TP070823_student_data.csv" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G36_TP068202_TP070822_TP070823_CircularQueue_Unanswered_Deck.hpp" />

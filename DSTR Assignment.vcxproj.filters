@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="G36_TP068202_TP070822_TP070823_quiz_question.csv">
+    <None Include="G36_TP068202_TP070822_TP070823_student_data.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\DSTR\PURSUIT-CARD-GAME-\G36_TP068202_TP070822_TP070823_quiz_question.csv">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

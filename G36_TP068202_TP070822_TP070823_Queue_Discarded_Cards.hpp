@@ -87,7 +87,6 @@ public:
 		delete current;
 		queueSize--;
 		return node;
-
 	}
 
 	// peek
@@ -105,8 +104,8 @@ public:
 		while (current != nullptr) {
 			cout << current->questionNumber << endl;
 			cout << current->quizQuestion << endl;
-			cout << current->answer;
-			cout << current->score;
+			cout << current->answer<<endl;
+			cout << current->score<<endl;
 			current = current->nextAdd;
 		}
 		cout << endl;
