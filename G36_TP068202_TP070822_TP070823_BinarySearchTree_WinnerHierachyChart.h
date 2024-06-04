@@ -39,7 +39,7 @@ public:
 	}
 
 	// display
-	void display() {
+	void levelOrder() {
 
 	}
 

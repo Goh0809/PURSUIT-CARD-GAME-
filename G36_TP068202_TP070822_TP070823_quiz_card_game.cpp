@@ -59,6 +59,7 @@ int main() {
 	// call the method to insert top 30 student into the winner bst
 	cardGame.insertWinnerToBST(winner, student);
 	string searchStudent;
+	cout << "Enter Your Name to Search Are You Top 30 Winners: " << endl;
 	cin >> searchStudent;
 	if (winner.find(searchStudent)) {
 		cout << "found";
@@ -189,15 +190,11 @@ void autoGameMode(int studentNum) {
 	while (studentNum <= cardGame.countStudentAmountInStudentFile()) {
 		// get the student name first
 		string studentName = cardGame.getStudentName(studentNum);
-		cout << studentName << ":" << endl;
 		// due to there is 3 round per student
 		int round = 1;
 		// initiate the total score varaible to calculate the total score of the student
 		int totalScore = 0;
 		while (round <= 3) {
-			cout << "Round " << round << ":" << endl;
-			// peek the answer of the question
-			cardGame.displayFirstQuestion(unansweredDeck);
 
 			// display the first question means dequeue the question also
 			QuizQuestion currentQuestion = unansweredDeck.peek();
@@ -208,13 +205,11 @@ void autoGameMode(int studentNum) {
 
 			// ask the student to select whether they want to answer the current question or discarded the question
 			int selection;
-			cout << "Select 1 to answer the question" << endl << "Select 2 to discard the question" << endl << "Select 3 to answer the discarded question" << endl << "Enter your selection: " << endl;
 			selection = 1;
 			cout << endl;
 			if (selection == 1) {
 				// start answering the question
 				string answer;
-				cout << "Answer the Question: ";
 				answer = "A";
 				cout << endl;
 				// check wheter the answer is correct or not
@@ -240,7 +235,9 @@ void autoGameMode(int studentNum) {
 		system("cls");
 		// proceed to next student
 		studentNum++;
-		cout << "Data Loading Complete";
-		cout << endl;
+		cout << "data loading..................";
+		system("cls");
 	}
+	cout << "Data Loading Complete";
+	cout << endl;
 }
