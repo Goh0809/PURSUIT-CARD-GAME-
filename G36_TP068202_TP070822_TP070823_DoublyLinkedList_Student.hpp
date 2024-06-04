@@ -85,6 +85,16 @@ public:
 		}
 	}
 
+	StudentDoublyLinkedListNode* getNodeByPostion(int number) {
+		StudentDoublyLinkedListNode* current = head;
+		int currentIndex = 0;
+		while (current != nullptr && currentIndex < number) {
+			current = current->next;
+			currentIndex++;
+		}
+		return current;
+	}
+
 	void sort() {
 		head = mergeSort(head);
 		// Reset tail after sorting

@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream> 
 #include <string>
-#define size 3       // Due to there is 3 rounds only
+#define SIZE 3       // Due to there is 3 rounds only
 
 using namespace std;
 
@@ -18,7 +18,7 @@ public:
     // constructor
     AnsweredDeck() {
         top = -1;
-        stack = new Card[size];
+        stack = new Card[SIZE];
     }
 
     // destructur
@@ -33,7 +33,7 @@ public:
 
     // determine the stack is full or not
     bool isFull() {
-        return (top == (size - 1));
+        return (top == (SIZE - 1));
     }
 
     // push the answered question and its score inside the stack

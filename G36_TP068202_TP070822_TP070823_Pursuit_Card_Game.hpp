@@ -6,6 +6,8 @@
 #include "G36_TP068202_TP070822_TP070823_CircularQueue_Unanswered_Deck.hpp"
 #include "G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp"
 #include "G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp"
+#include "G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp"
+#include "G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h"
 
 using namespace std;
 
@@ -204,6 +206,16 @@ public:
 		outFile.close();
 	}
 
+	// load the top 30 students to the winner binary search tree
+	void insertWinnerToBST(WinnerBinarySearchTree& Winner, studentDoublyLinkedList& student) {
+		for (int ranking = 1; ranking <= 30; ranking++) {
+			StudentDoublyLinkedListNode* current = student.getNodeByPostion(ranking);
+			Winner.insert(current->name, ranking);
+		}
+	}
+
+
+
 	string getDiscardedQuestionNumber(DiscardedCardQueue& discardedcardqueue) {
 		discardedCardNode* discardedCard = discardedcardqueue.peek();
 		string questionNumber = discardedCard->questionNumber;
@@ -228,9 +240,6 @@ public:
 		return score;
 	}
 
-	void clearScreen() {
-		system("cls");
-	}
 
 	
 private: 

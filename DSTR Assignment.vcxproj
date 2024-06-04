@@ -139,7 +139,7 @@
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp" />
     <ClInclude Include="G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp" />
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp" />
-    <ClInclude Include="G36_TP068202_TP070822_TP070823_Tree_Top30Winners.h" />
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
