@@ -1,12 +1,14 @@
 #include <string>
 #include <cstdlib>
 #include <chrono>
+#include <thread>
 #include "G36_TP068202_TP070822_TP070823_Pursuit_Card_Game.hpp"
 #include "G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp"
 #include "G36_TP068202_TP070822_TP070823_CircularQueue_Unanswered_Deck.hpp"
 #include "G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp"
 #include "G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp"
-#include "G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h"
+#include "G36_TP068202_TP070822_TP070823_BinarySearchTree_Winner.hpp"
+#include "G36_TP068202_TP070822_TP070823_TwoDimensionArray_Leaderboard.hpp"
 
 using namespace std; 
 using namespace std::chrono;
@@ -18,6 +20,7 @@ studentDoublyLinkedList student;
 AnsweredDeck answeredDeck;
 DiscardedCardQueue discardedCard;
 WinnerBinarySearchTree winner;
+
 
 void manualGameMode(int studentNum);
 void autoGameMode(int studentNum);
@@ -62,19 +65,19 @@ int main() {
 	}
 
 	// sort the student descending by the total score to rank them
-	auto start = high_resolution_clock::now();
+	//auto start = high_resolution_clock::now();
 	student.sort();
-	auto stop = high_resolution_clock::now();
+	/*auto stop = high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(stop - start);
 	cout << duration.count() << "microseconds" << endl;
-	system("pause");
+	system("pause");*/
 
 	// call the method to insert top 30 student into the winner bst
 	cardGame.insertWinnerToBST(winner, student);
 
 	// start after game logic
 	while (true) {
-		cout << "Type 1 to view the Top 30 Winner" << endl << "Type 2 to view the LeaderBoard" << endl << "Type 3 to restart the game" << endl << "Type 4 to end the game" << endl << "Enter your selection: " << endl;
+		cout << "Type 1 to view the Top 30 Winner" << endl << "Type 2 to view the LeaderBoard" << endl << "Type 3 to end the game" << endl << "Enter your selection: " << endl;
 		int selection;
 		cin >> selection;
 		if (selection == 1) {
@@ -98,20 +101,40 @@ int main() {
 
 
 		}
-		else if (selection == 3) {
+		else if (selection == 2) {
+			// declare leaderboard object
+			Leaderboard leaderboard(cardGame.countStudentAmountInStudentFile());
+			leaderboard.loadStudentDataToArray();
+			leaderboard.sortDescending();
+			leaderboard.displayDescending();
 			while (true) {
-				cout << "Enter the amount of student" << endl << "Type 2 to Go Back" << endl;
-				cin >> studentAmount;
-				if (studentAmount >= 30 && studentAmount <= 100) {
-					cardGame.startGame(studentAmount);
+				int choice;
+				cout << "Type 1 to enter your name to search your quiz's result" << endl << "Type 2 to sort the leaderboard in descending order" << endl << "Type 3 to sort the leaderboard in ascending order" <<
+					endl << "Type 4 to exit" << endl << "Enter your selection: " << endl;
+				cin >> choice;
+				if (choice == 1) {
+					string searchStudent;
+					cout << "Enter Your Name to Search Your Quiz Result: " << endl;
+					cin >> searchStudent;
+					cout << endl;
+					leaderboard.search(searchStudent);
+				}
+				else if (choice == 2) {
+					leaderboard.displayDescending();
+				}
+				else if (choice == 3) {
+					leaderboard.displayAscending(cardGame.countStudentAmountInStudentFile());
+				}
+				else if (choice == 4) {
 					break;
 				}
 				else {
-					cout << "Student Amount cannot be less than 30 and more than 100" << endl;
+					cout << choice << " is not allowed" << endl;
+					continue;
 				}
 			}
-		}
-		else if (selection == 4) {
+		}	
+		else if (selection == 3) {
 			// rewrite the student data txt file to clean the data
 			cardGame.startGame(studentAmount);
 			system("exit");
@@ -178,6 +201,7 @@ void manualGameMode(int studentNum) {
 			}
 			else if (selection == 3) {
 				if (discardedCard.isEmpty()) {
+					cout << "You haven't discarded any question" << endl;
 					continue;
 				}
 				cardGame.displaydiscardedquestion(discardedCard);
@@ -272,6 +296,8 @@ void autoGameMode(int studentNum) {
 		// after complete the three round store the student data inside the student doubly linked list
 		student.insertEnd(studentName, totalScore);
 		// call the method to write the data inside the csv file
+
+		
 		cardGame.deleteCurrentStudentAnsweredDeck(answeredDeck, totalScore, studentNum, studentName);
 		// clean the command prompt screen to initiate next student round
 		system("cls");
@@ -279,6 +305,7 @@ void autoGameMode(int studentNum) {
 		studentNum++;
 		cout << "data loading..................";
 		system("cls");
+		
 	}
 	cout << "Data Loading Complete";
 	cout << endl;

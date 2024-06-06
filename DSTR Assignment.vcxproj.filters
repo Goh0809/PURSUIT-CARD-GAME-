@@ -40,10 +40,13 @@
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Pursuit_Card_Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h">
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_BinarySearchTree_Winner.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_TwoDimensionArray_Leaderboard.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

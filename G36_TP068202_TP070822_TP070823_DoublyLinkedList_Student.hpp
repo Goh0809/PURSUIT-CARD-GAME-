@@ -160,7 +160,6 @@ private:
 		slow->next = nullptr;
 		return temp;
 	}
-
 };
 
 

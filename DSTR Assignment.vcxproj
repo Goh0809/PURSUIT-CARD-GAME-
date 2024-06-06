@@ -139,7 +139,8 @@
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp" />
     <ClInclude Include="G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp" />
     <ClInclude Include="G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp" />
-    <ClInclude Include="G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h" />
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_BinarySearchTree_Winner.hpp" />
+    <ClInclude Include="G36_TP068202_TP070822_TP070823_TwoDimensionArray_Leaderboard.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

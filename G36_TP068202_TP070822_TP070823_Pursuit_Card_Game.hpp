@@ -7,7 +7,7 @@
 #include "G36_TP068202_TP070822_TP070823_Stack_AnsweredDeck.hpp"
 #include "G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp"
 #include "G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp"
-#include "G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h"
+#include "G36_TP068202_TP070822_TP070823_BinarySearchTree_Winner.hpp"
 #include "binarytree.hpp"
 
 using namespace std;
