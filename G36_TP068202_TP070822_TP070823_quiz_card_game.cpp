@@ -65,12 +65,7 @@ int main() {
 	}
 
 	// sort the student descending by the total score to rank them
-	//auto start = high_resolution_clock::now();
 	student.sort();
-	/*auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<microseconds>(stop - start);
-	cout << duration.count() << "microseconds" << endl;
-	system("pause");*/
 
 	// call the method to insert top 30 student into the winner bst
 	cardGame.insertWinnerToBST(winner, student);
@@ -97,9 +92,10 @@ int main() {
 				else if (search == 2) {
 					break;
 				}
+				else {
+					cout << search << "is not allowed" << endl;
+				}
 			}
-
-
 		}
 		else if (selection == 2) {
 			// declare leaderboard object
@@ -123,7 +119,7 @@ int main() {
 					leaderboard.displayDescending();
 				}
 				else if (choice == 3) {
-					leaderboard.displayAscending(cardGame.countStudentAmountInStudentFile());
+					leaderboard.displayAscending();
 				}
 				else if (choice == 4) {
 					break;
@@ -141,7 +137,6 @@ int main() {
 			break;
 		}
 	}
-
 
 	return 0;
 }

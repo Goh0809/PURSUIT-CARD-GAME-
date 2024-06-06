@@ -89,40 +89,97 @@ public:
 
     void displayDescending() {
         cout << "leaderboard: " << endl;
-        cout << "Ranking" << setw(15) << "StudentName" << setw(15) << "Question" << setw(70) << "Score" << setw(15) << "Total Score" << endl;
+        cout << "Ranking" << setw(15) << "StudentName" << setw(20) << "Question" << setw(52) << "Score" << setw(15) << "Total Score" << endl;
         cout << "---------------------------------------------------------------------------------------------------------------" << endl;
         for (int i = 0; i < studentAmount; i++) {
-            cout << "Ranking: " << i+1 << endl;
-            cout << leaderboard[i][0] << ": " << endl;
-            string round1Data = leaderboard[i][1] + " Score: " + leaderboard[i][2];
-            cout << "Round1: " << round1Data << endl;
-            string round2Data = leaderboard[i][3] + " Score: " + leaderboard[i][4];
-            cout << "Round2: " << round2Data << endl;
-            string round3Data = leaderboard[i][5] + " Score: " + leaderboard[i][6];
-            cout << "Round3: " << round3Data << endl;
-            cout << "Total Score: " << leaderboard[i][7] << endl;
+            string space;
+            if (leaderboard[i][0].length() == 9) {
+                space = "          ";
+            }
+            else {
+                space = "           ";
+            }
+            cout << i + 1 << "         " << leaderboard[i][0] << space; // Print student number and name
+
+            // Process round 1 questions
+            string round1Question = leaderboard[i][1];
+            cout << round1Question.substr(0, 50) << "           " << leaderboard[i][2] << "          " << leaderboard[i][7] << endl;
+
+            // Output round 1 questions
+            for (int j = 50; j < round1Question.length(); j += 50) {
+                cout << "                             " << round1Question.substr(j, 50) << endl;
+            }
+            cout << endl;
+            // Process round 2 questions
+            string round2Question = leaderboard[i][3];
+            cout << "                             " << round2Question.substr(0, 50) << "           " << leaderboard[i][4] << endl;
+
+            // Output round 2 questions
+            for (int k = 50; k < round2Question.length(); k += 50) {
+                cout << "                             " << round2Question.substr(k, 50) << endl;
+            }
+            cout << endl;
+            // Process round 3 questions
+            string round3Question = leaderboard[i][5];
+            cout << "                             " << round3Question.substr(0, 50) << "           " << leaderboard[i][6] << endl;
+
+            // Output round 3 questions
+            for (int l = 50; l < round3Question.length(); l += 50) {
+                cout << "                             " << round3Question.substr(l, 50) << endl;
+            }
+
             cout << "---------------------------------------------------------------------------------------------------------------" << endl;
         }
     }
 
-    void displayAscending(int studentAmount) {
+    void displayAscending() {
         cout << "leaderboard: " << endl;
-        cout << "Ranking" << setw(15) << "StudentName" << setw(15) << "Question" << setw(50) << "Score" << setw(15) << "Total Score" << endl;
+        cout << "Ranking" << setw(15) << "StudentName" << setw(20) << "Question" << setw(52) << "Score" << setw(15) << "Total Score" << endl;
         cout << "---------------------------------------------------------------------------------------------------------------" << endl;
         for (int i = studentAmount - 1; i >= 0; i--) {
-            cout << "Ranking: " << i + 1 << endl;
-            cout << leaderboard[i][0] << ": " << endl;
-            string round1Data = leaderboard[i][1] + " Score: " + leaderboard[i][2];
-            cout << "Round1: " << round1Data << endl;
-            string round2Data = leaderboard[i][3] + " Score: " + leaderboard[i][4];
-            cout << "Round2: " << round2Data << endl;
-            string round3Data = leaderboard[i][5] + " Score: " + leaderboard[i][6];
-            cout << "Round3: " << round3Data << endl;
-            cout << "Total Score: " << leaderboard[i][7] << endl;
+            string space;
+            if (leaderboard[i][0].length() == 9) {
+                space = "          ";
+            }
+            else {
+                space = "           ";
+            }
+            cout << i + 1 << "         " << leaderboard[i][0] << space; // Print student number and name
+            
+            // Process round 1 questions
+            string round1Question = leaderboard[i][1];
+            cout << round1Question.substr(0, 50) << "           " << leaderboard[i][2] << "          " << leaderboard[i][7] << endl;
+
+            // Output round 1 questions
+            for (int j = 50; j < round1Question.length(); j += 50) {
+                cout << "                             " << round1Question.substr(j, 50) << endl;
+            }
+            cout << endl;
+            // Process round 2 questions
+            string round2Question = leaderboard[i][3];
+            cout << "                             " << round2Question.substr(0, 50) << "           " << leaderboard[i][4] << endl;
+
+            // Output round 2 questions
+            for (int k = 50; k < round2Question.length(); k += 50) {
+                cout << "                             " << round2Question.substr(k, 50) << endl;
+            }
+            cout << endl;
+            // Process round 3 questions
+            string round3Question = leaderboard[i][5];
+            cout << "                             " << round3Question.substr(0, 50) << "           " << leaderboard[i][6] << endl;
+
+            // Output round 3 questions
+            for (int l = 50; l < round3Question.length(); l += 50) {
+                cout << "                             " << round3Question.substr(l, 50) << endl;
+            }
+
             cout << "---------------------------------------------------------------------------------------------------------------" << endl;
         }
+
+
     }
     
+
     // bubble sort O (n) 
     void sortDescending() {
         for (int round = 1; round <= studentAmount; round++) {
