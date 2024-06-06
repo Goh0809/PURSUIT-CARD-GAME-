@@ -32,7 +32,7 @@ int main() {
 	while (true) {
 		cout << "Enter the amount of student" << endl;
 		cin >> studentAmount;
-		if (studentAmount >= 30 && studentAmount <= 100) {
+		if (studentAmount >= 70 && studentAmount <= 100) {
 			cardGame.startGame(studentAmount);
 			break;
 		}
