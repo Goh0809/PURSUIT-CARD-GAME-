@@ -1,5 +1,6 @@
 #include <string>
 #include <cstdlib>
+#include <chrono>
 #include "G36_TP068202_TP070822_TP070823_Pursuit_Card_Game.hpp"
 #include "G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp"
 #include "G36_TP068202_TP070822_TP070823_CircularQueue_Unanswered_Deck.hpp"
@@ -8,6 +9,7 @@
 #include "G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h"
 
 using namespace std; 
+using namespace std::chrono;
 
 // declare necessary object
 PursuitCardGame cardGame;
@@ -21,15 +23,20 @@ void manualGameMode(int studentNum);
 void autoGameMode(int studentNum);
 
 int main() {
-
-	
-
-	cout << "Welcome to Pursuit Card Game!" << endl;
+	cout << "Welcome to Pursuit Card Game!" << endl << endl;
 	// start the Pursuit Card Game by entering the number of students
 	int studentAmount;
-	cout << "Enter the amount of student" << endl;
-	cin >> studentAmount;
-	cardGame.startGame(studentAmount);
+	while (true) {
+		cout << "Enter the amount of student" << endl;
+		cin >> studentAmount;
+		if (studentAmount >= 30 && studentAmount <= 100) {
+			cardGame.startGame(studentAmount);
+			break;
+		}
+		else {
+			cout << "Student Amount cannot be less than 70 and more than 100" << endl;
+		}
+	}
 
 	// declare the necessary global variable
 	int studentNum = 1;
@@ -55,33 +62,63 @@ int main() {
 	}
 
 	// sort the student descending by the total score to rank them
+	auto start = high_resolution_clock::now();
 	student.sort();
+	auto stop = high_resolution_clock::now();
+	auto duration = duration_cast<microseconds>(stop - start);
+	cout << duration.count() << "microseconds" << endl;
+	system("pause");
+
 	// call the method to insert top 30 student into the winner bst
 	cardGame.insertWinnerToBST(winner, student);
-	string searchStudent;
-	cout << "Enter Your Name to Search Are You Top 30 Winners: " << endl;
-	cin >> searchStudent;
-	if (winner.find(searchStudent)) {
-		cout << "found";
+
+	// start after game logic
+	while (true) {
+		cout << "Type 1 to view the Top 30 Winner" << endl << "Type 2 to view the LeaderBoard" << endl << "Type 3 to restart the game" << endl << "Type 4 to end the game" << endl << "Enter your selection: " << endl;
+		int selection;
+		cin >> selection;
+		if (selection == 1) {
+			while (true) {
+				cardGame.printWinnerInHierachy();
+				cout << endl;
+				int search;
+				cout << "Type 1 to enter your name to search are you top 30 winners: " << endl << "Type 2 to exit: " << endl;
+				cin >> search;
+				if (search == 1) {
+					string searchStudent;
+					cout << "Enter Your Name to Search Are You Top 30 Winners: " << endl;
+					cin >> searchStudent;
+					cout << endl;
+					winner.find(searchStudent);
+				}
+				else if (search == 2) {
+					break;
+				}
+			}
+
+
+		}
+		else if (selection == 3) {
+			while (true) {
+				cout << "Enter the amount of student" << endl << "Type 2 to Go Back" << endl;
+				cin >> studentAmount;
+				if (studentAmount >= 30 && studentAmount <= 100) {
+					cardGame.startGame(studentAmount);
+					break;
+				}
+				else {
+					cout << "Student Amount cannot be less than 30 and more than 100" << endl;
+				}
+			}
+		}
+		else if (selection == 4) {
+			// rewrite the student data txt file to clean the data
+			cardGame.startGame(studentAmount);
+			system("exit");
+			break;
+		}
 	}
 
-
-
-
-	// testing
-	// ask to restart the game or exit the game
-	int exit;
-	cout << "Type 1 to restart the game" << endl << "Type 2 to end the game" << endl << "Enter your decision: " << endl;
-	cin >> exit;
-	if (exit == 1) {
-		cout << "Enter the amount of studednt" << endl;
-		cin >> studentAmount;
-		cardGame.startGame(studentAmount);
-	}
-	else if (exit == 2) {
-		cardGame.startGame(studentAmount);
-		system("exit");
-	}
 
 	return 0;
 }
@@ -91,7 +128,7 @@ void manualGameMode(int studentNum) {
 	while (studentNum <= cardGame.countStudentAmountInStudentFile()) {
 		// get the student name first
 		string studentName = cardGame.getStudentName(studentNum);
-		cout << studentName << ":" << endl;
+		cout << studentName << ":" << endl << endl;
 		// due to there is 3 round per student
 		int round = 1;
 		// initiate the total score varaible to calculate the total score of the student
@@ -137,6 +174,7 @@ void manualGameMode(int studentNum) {
 				// start discarded Question Logic
 				discardedCard.enqueue(questionNumber, quizQuestion, questionAnswer, score);
 				unansweredDeck.dequeue();
+				cout << "discard Successfully" << endl << endl;
 			}
 			else if (selection == 3) {
 				if (discardedCard.isEmpty()) {
@@ -145,9 +183,12 @@ void manualGameMode(int studentNum) {
 				cardGame.displaydiscardedquestion(discardedCard);
 				string discardedAnswer;
 				cout << "Answer the Question or Type 1 to Continue Answer the Other Question: " << endl;
-
+				
 				cin.ignore();
 				getline(cin, discardedAnswer);
+				if (discardedAnswer == "1") {
+					continue;
+				}
 
 				string discardedQuestionNumber = cardGame.getDiscardedQuestionNumber(discardedCard);
 				string discardedQuizQuestion = cardGame.getDiscardedQuizQuestion(discardedCard);
@@ -179,6 +220,7 @@ void manualGameMode(int studentNum) {
 		student.insertEnd(studentName, totalScore);
 		// call the method to write the data inside the csv file
 		cardGame.deleteCurrentStudentAnsweredDeck(answeredDeck, totalScore, studentNum, studentName);
+		cout << endl << "You have complete the Quiz" << endl;
 		// clean the command prompt screen to initiate next student round
 		system("cls");
 		// proceed to next student

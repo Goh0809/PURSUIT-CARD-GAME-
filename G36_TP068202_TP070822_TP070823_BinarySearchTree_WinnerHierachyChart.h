@@ -32,16 +32,17 @@ public:
 	bool find(string studentName) {
 		StudentNode* result = find(root, studentName);
 		if (result != nullptr) {
-			cout << "Congratulations! " << result->studentName << " Your Ranking is Number " << result->ranking << endl;
+			cout << "Congratulations! " << result->studentName << " Your Ranking is Number " << result->ranking + 1 << endl << endl;
 			return true;
 		}
+		cout << "You are not Top 30 winners" << endl << endl;
 		return false;
 	}
 
-	// display
-	void levelOrder() {
-
+	int height() {
+		return height(root);
 	}
+
 
 private:
 	// insert
@@ -99,5 +100,16 @@ private:
 		}
 	}
 
+	// calculate the height
+	int height(StudentNode* root) {
+		if (root == nullptr) {
+			return 0;
+		}
+		else {
+			return 1 + max(height(root->left), height(root->right));
+		}
+	}
 
 };
+
+//https://www.digitalocean.com/community/tutorials/level-order-traversal-in-a-binary-tree

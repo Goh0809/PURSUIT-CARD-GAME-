@@ -8,8 +8,11 @@
 #include "G36_TP068202_TP070822_TP070823_Queue_Discarded_Cards.hpp"
 #include "G36_TP068202_TP070822_TP070823_DoublyLinkedList_Student.hpp"
 #include "G36_TP068202_TP070822_TP070823_BinarySearchTree_WinnerHierachyChart.h"
+#include "binarytree.hpp"
 
 using namespace std;
+
+string studentWinner[30];
 
 class PursuitCardGame {
 	// Reminder - adjust the file path by yourself
@@ -208,13 +211,41 @@ public:
 
 	// load the top 30 students to the winner binary search tree
 	void insertWinnerToBST(WinnerBinarySearchTree& Winner, studentDoublyLinkedList& student) {
-		for (int ranking = 1; ranking <= 30; ranking++) {
+		for (int ranking = 0; ranking < 30; ranking++) {
 			StudentDoublyLinkedListNode* current = student.getNodeByPostion(ranking);
+			// insert the winner to the student winner array for display purpose
+			studentWinner[ranking] = current->name;
+			// insert the winner to the bst for the searching purpose
 			Winner.insert(current->name, ranking);
 		}
 	}
 
-
+	// print the winner in hierachy chart
+	void printWinnerInHierachy() {
+		int studentNo = 0;
+		for (int i = 1; i <= 7; i++) {
+			if (i != 7) {
+				// add the blanket before each row to make the winner hierachy chart is showing clearly   
+				for (int k = 8 - i; k > 0; k--) {
+					cout << "      ";
+				}
+			}
+			// display the winner name
+			for (int j = 1; j <= i; j++) {
+				if (studentNo == 30) {
+					break;
+				}
+				cout << studentWinner[studentNo] << "  ";
+				// due to there is only 30 winners in this game but following this algorithm, if proceed until 7th row
+				if (j == 7) { 
+					cout << studentWinner[28] << "  ";
+					cout << studentWinner[29];
+				}
+				studentNo++;
+			}
+			cout << endl << endl;
+		}
+	}
 
 	string getDiscardedQuestionNumber(DiscardedCardQueue& discardedcardqueue) {
 		discardedCardNode* discardedCard = discardedcardqueue.peek();
@@ -240,8 +271,6 @@ public:
 		return score;
 	}
 
-
-	
 private: 
 	string processInsertedString(AnsweredDeck& answeredDeck,int totalScore, string studentName) {
 		string insertedString = "|"+to_string(totalScore);
@@ -258,3 +287,5 @@ private:
 
 
 };
+
+// https://www.geeksforgeeks.org/cpp-program-to-print-pyramid-patterns/
